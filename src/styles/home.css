@@ -1,0 +1,519 @@
+/* ---------- 首頁 Hero ---------- */
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--stage);
+  color: var(--stage-ink);
+  isolation: isolate;
+}
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.hero-slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.kenburns {
+  animation: kenburns linear forwards;
+  transform-origin: 60% 40%;
+}
+@keyframes kenburns {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-1.5%, -1%, 0);
+  }
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(10, 9, 8, 0.55) 0%, rgba(10, 9, 8, 0) 22%),
+    linear-gradient(90deg, rgba(10, 9, 8, 0.78) 0%, rgba(10, 9, 8, 0.35) 45%, rgba(10, 9, 8, 0) 75%),
+    linear-gradient(0deg, rgba(10, 9, 8, 0.75) 0%, rgba(10, 9, 8, 0) 40%);
+}
+.hero-glow {
+  position: absolute;
+  z-index: -1;
+  width: 620px;
+  height: 620px;
+  margin: -310px 0 0 -310px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 226, 170, 0.16) 0%, rgba(255, 226, 170, 0) 65%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transition: left 0.25s var(--ease-out), top 0.25s var(--ease-out);
+}
+.hero-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: clamp(140px, 22vh, 220px);
+  display: grid;
+  gap: 20px;
+  max-width: var(--maxw);
+}
+.hero-kicker {
+  color: #e2c992;
+}
+.hero-title {
+  max-width: 13ch;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+}
+.lang-zh .hero-title {
+  max-width: 11em;
+}
+.hero-sub {
+  max-width: 34rem;
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  color: var(--stage-ink-2);
+  margin: 0;
+}
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.hero-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--maxw);
+}
+.hero-caption-link {
+  display: grid;
+  gap: 2px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(226, 201, 146, 0.7);
+}
+.hero-caption-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.lang-zh .hero-caption-title {
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+.hero-caption-sub {
+  font-size: 0.8rem;
+  color: var(--stage-ink-2);
+  letter-spacing: 0.04em;
+}
+.hero-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-controls .icon-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.hero-dots {
+  display: flex;
+  gap: 8px;
+}
+.hero-dot {
+  width: 36px;
+  height: 24px;
+  display: grid;
+  align-items: center;
+}
+.hero-dot::before,
+.hero-dot-fill {
+  grid-area: 1 / 1;
+  height: 2px;
+  border-radius: 2px;
+}
+.hero-dot::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+}
+.hero-dot-fill {
+  background: #fff;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.hero-dot-fill[data-active="true"] {
+  animation: dotfill linear forwards;
+}
+.hero-dot-fill[data-done="true"] {
+  transform: scaleX(1);
+}
+@keyframes dotfill {
+  to {
+    transform: scaleX(1);
+  }
+}
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  width: 26px;
+  height: 42px;
+  margin-left: -13px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 14px;
+}
+.hero-scroll span {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  width: 3px;
+  height: 8px;
+  margin-left: -1.5px;
+  border-radius: 2px;
+  background: #fff;
+  animation: scrollcue 2s var(--ease-in-out) infinite;
+}
+@keyframes scrollcue {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 800px) {
+  .hero-scroll {
+    display: none;
+  }
+  .hero-content {
+    bottom: 196px;
+    gap: 14px;
+  }
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(10, 9, 8, 0.5) 0%, rgba(10, 9, 8, 0) 25%),
+      linear-gradient(0deg, rgba(10, 9, 8, 0.88) 0%, rgba(10, 9, 8, 0.4) 55%, rgba(10, 9, 8, 0.1) 100%);
+  }
+  .hero-caption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    bottom: 24px;
+  }
+  .hero-dot {
+    width: 24px;
+  }
+}
+
+/* ---------- 引言 ---------- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(40px, 7vw, 120px);
+  align-items: center;
+}
+.intro-title {
+  margin: 14px 0 24px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.stat {
+  display: grid;
+  gap: 2px;
+}
+.stat-value {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1;
+  color: var(--accent-ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--ink-3);
+}
+.intro-collage {
+  position: relative;
+  height: clamp(420px, 48vw, 620px);
+}
+.collage-item {
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+}
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collage-0 {
+  left: 6%;
+  top: 0;
+  width: 52%;
+  height: 62%;
+}
+.collage-1 {
+  right: 0;
+  top: 22%;
+  width: 48%;
+  height: 40%;
+}
+.collage-2 {
+  left: 24%;
+  bottom: 0;
+  width: 40%;
+  height: 42%;
+}
+@media (max-width: 900px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+  .intro-collage {
+    height: 380px;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ---------- 時期展廳 ---------- */
+.section-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 64px;
+  align-items: end;
+  margin-bottom: clamp(40px, 6vw, 80px);
+}
+.section-head .h2 {
+  margin-top: 10px;
+}
+.section-head .lead {
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .section-head {
+    grid-template-columns: 1fr;
+  }
+}
+
+.period-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 72px) clamp(24px, 4vw, 56px);
+}
+.period-card-wrap.is-offset {
+  transform: translateY(clamp(0px, 8vw, 120px));
+}
+.period-grid {
+  padding-bottom: clamp(0px, 8vw, 120px);
+}
+.period-card {
+  display: block;
+}
+.period-card-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  background: var(--bg-sunk);
+}
+.period-card-media img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.4s var(--ease-out), filter 0.8s;
+}
+.period-card:hover .period-card-media img {
+  transform: scale(1.05);
+}
+.period-card-body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: start;
+  padding-top: 20px;
+  border-top: 2px solid var(--pc);
+  margin-top: 18px;
+}
+.period-card-num {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--ink-3);
+  padding-top: 6px;
+}
+.period-card-name {
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+}
+.period-card-years {
+  margin: 4px 0 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+.period-card-tag {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+.period-card-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: grid;
+  place-items: center;
+  transition: all 0.4s var(--ease-out);
+}
+.period-card-arrow svg {
+  width: 18px;
+  height: 18px;
+}
+.period-card:hover .period-card-arrow {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  transform: translateX(4px);
+}
+@media (max-width: 800px) {
+  .period-grid {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  .period-card-wrap.is-offset {
+    transform: none;
+  }
+}
+
+/* ---------- 精選作品 ---------- */
+.featured {
+  position: relative;
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--stage);
+  color: var(--stage-ink);
+  isolation: isolate;
+}
+.featured-media {
+  position: absolute;
+  inset: -6% 0;
+  z-index: -2;
+}
+.featured-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 30% 60%, rgba(10, 9, 8, 0.7) 0%, rgba(10, 9, 8, 0.2) 60%, rgba(10, 9, 8, 0.45) 100%);
+}
+.featured-content {
+  display: grid;
+  gap: 18px;
+  justify-items: start;
+}
+.featured-content .lead {
+  color: var(--stage-ink-2);
+  max-width: 30rem;
+}
+
+/* ---------- 瀏覽入口 ---------- */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.explore-card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  height: 100%;
+  min-height: 240px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out), border-color 0.4s;
+}
+.explore-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+.explore-card p {
+  color: var(--ink-3);
+  font-size: 0.92rem;
+  margin: 0;
+}
+.explore-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.explore-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.explore-arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  color: var(--ink-3);
+  transition: transform 0.4s var(--ease-out), color 0.3s;
+}
+.explore-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+.explore-card:hover .explore-arrow {
+  transform: translateX(4px);
+  color: var(--accent-ink);
+}
+@media (max-width: 1000px) {
+  .explore-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+  .explore-card {
+    min-height: 0;
+  }
+}

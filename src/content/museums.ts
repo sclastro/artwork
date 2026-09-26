@@ -1,0 +1,37 @@
+import type { Museum } from "./types";
+
+export const museums: Museum[] = [
+  { slug: "uffizi", name: { zh: "烏菲茲美術館", en: "Uffizi Gallery" }, city: { zh: "佛羅倫斯", en: "Florence" }, country: { zh: "意大利", en: "Italy" }, lat: 43.7678, lng: 11.2553, url: "https://www.uffizi.it/en" },
+  { slug: "louvre", name: { zh: "羅浮宮", en: "Musée du Louvre" }, city: { zh: "巴黎", en: "Paris" }, country: { zh: "法國", en: "France" }, lat: 48.8606, lng: 2.3376, url: "https://www.louvre.fr/en" },
+  { slug: "santa-maria-delle-grazie", name: { zh: "恩寵聖母修道院", en: "Santa Maria delle Grazie" }, city: { zh: "米蘭", en: "Milan" }, country: { zh: "意大利", en: "Italy" }, lat: 45.466, lng: 9.1709, url: "https://cenacolovinciano.org/en/" },
+  { slug: "vatican-museums", name: { zh: "梵蒂岡博物館", en: "Vatican Museums" }, city: { zh: "梵蒂岡城", en: "Vatican City" }, country: { zh: "梵蒂岡", en: "Vatican City" }, lat: 41.9065, lng: 12.4536, url: "https://www.museivaticani.va/" },
+  { slug: "national-gallery-london", name: { zh: "英國國家美術館", en: "The National Gallery" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.5089, lng: -0.1283, url: "https://www.nationalgallery.org.uk/" },
+  { slug: "prado", name: { zh: "普拉多博物館", en: "Museo del Prado" }, city: { zh: "馬德里", en: "Madrid" }, country: { zh: "西班牙", en: "Spain" }, lat: 40.4138, lng: -3.6921, url: "https://www.museodelprado.es/en" },
+  { slug: "kunsthistorisches", name: { zh: "維也納藝術史博物館", en: "Kunsthistorisches Museum" }, city: { zh: "維也納", en: "Vienna" }, country: { zh: "奧地利", en: "Austria" }, lat: 48.2038, lng: 16.3617, url: "https://www.khm.at/en/" },
+  { slug: "san-luigi-dei-francesi", name: { zh: "聖王路易堂", en: "San Luigi dei Francesi" }, city: { zh: "羅馬", en: "Rome" }, country: { zh: "意大利", en: "Italy" }, lat: 41.8995, lng: 12.4749, url: "https://www.saintlouisdesfrancais.it/" },
+  { slug: "rijksmuseum", name: { zh: "荷蘭國家博物館", en: "Rijksmuseum" }, city: { zh: "阿姆斯特丹", en: "Amsterdam" }, country: { zh: "荷蘭", en: "Netherlands" }, lat: 52.36, lng: 4.8852, url: "https://www.rijksmuseum.nl/en" },
+  { slug: "mauritshuis", name: { zh: "莫瑞泰斯皇家美術館", en: "Mauritshuis" }, city: { zh: "海牙", en: "The Hague" }, country: { zh: "荷蘭", en: "Netherlands" }, lat: 52.0804, lng: 4.3143, url: "https://www.mauritshuis.nl/en/" },
+  { slug: "wallace-collection", name: { zh: "華萊士典藏館", en: "The Wallace Collection" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.5175, lng: -0.1527, url: "https://www.wallacecollection.org/" },
+  { slug: "alte-pinakothek", name: { zh: "慕尼黑老繪畫陳列館", en: "Alte Pinakothek" }, city: { zh: "慕尼黑", en: "Munich" }, country: { zh: "德國", en: "Germany" }, lat: 48.1482, lng: 11.57, url: "https://www.pinakothek.de/en/alte-pinakothek" },
+  { slug: "royal-museums-brussels", name: { zh: "比利時皇家美術館", en: "Royal Museums of Fine Arts of Belgium" }, city: { zh: "布魯塞爾", en: "Brussels" }, country: { zh: "比利時", en: "Belgium" }, lat: 50.8418, lng: 4.3579, url: "https://fine-arts-museum.be/en" },
+  { slug: "belvedere", name: { zh: "美景宮美術館", en: "Belvedere Museum" }, city: { zh: "維也納", en: "Vienna" }, country: { zh: "奧地利", en: "Austria" }, lat: 48.1915, lng: 16.3809, url: "https://www.belvedere.at/en" },
+  { slug: "hamburger-kunsthalle", name: { zh: "漢堡美術館", en: "Hamburger Kunsthalle" }, city: { zh: "漢堡", en: "Hamburg" }, country: { zh: "德國", en: "Germany" }, lat: 53.5557, lng: 10.0027, url: "https://www.hamburger-kunsthalle.de/en" },
+  { slug: "alte-nationalgalerie", name: { zh: "柏林舊國家美術館", en: "Alte Nationalgalerie" }, city: { zh: "柏林", en: "Berlin" }, country: { zh: "德國", en: "Germany" }, lat: 52.5208, lng: 13.3981, url: "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/home/" },
+  { slug: "detroit-institute-of-arts", name: { zh: "底特律美術館", en: "Detroit Institute of Arts" }, city: { zh: "底特律", en: "Detroit" }, country: { zh: "美國", en: "United States" }, lat: 42.3594, lng: -83.0645, url: "https://dia.org/" },
+  { slug: "orsay", name: { zh: "奧賽美術館", en: "Musée d'Orsay" }, city: { zh: "巴黎", en: "Paris" }, country: { zh: "法國", en: "France" }, lat: 48.86, lng: 2.3266, url: "https://www.musee-orsay.fr/en" },
+  { slug: "russian-museum", name: { zh: "俄羅斯國家博物館", en: "State Russian Museum" }, city: { zh: "聖彼得堡", en: "Saint Petersburg" }, country: { zh: "俄羅斯", en: "Russia" }, lat: 59.9386, lng: 30.3321, url: "https://en.rusmuseum.ru/" },
+  { slug: "marmottan", name: { zh: "瑪摩丹美術館", en: "Musée Marmottan Monet" }, city: { zh: "巴黎", en: "Paris" }, country: { zh: "法國", en: "France" }, lat: 48.8594, lng: 2.2674, url: "https://www.marmottan.fr/en/" },
+  { slug: "national-gallery-of-art", name: { zh: "美國國家美術館", en: "National Gallery of Art" }, city: { zh: "華盛頓", en: "Washington, D.C." }, country: { zh: "美國", en: "United States" }, lat: 38.8913, lng: -77.02, url: "https://www.nga.gov/" },
+  { slug: "art-institute-chicago", name: { zh: "芝加哥藝術博物館", en: "Art Institute of Chicago" }, city: { zh: "芝加哥", en: "Chicago" }, country: { zh: "美國", en: "United States" }, lat: 41.8796, lng: -87.6237, url: "https://www.artic.edu/" },
+  { slug: "phillips-collection", name: { zh: "菲利普斯收藏館", en: "The Phillips Collection" }, city: { zh: "華盛頓", en: "Washington, D.C." }, country: { zh: "美國", en: "United States" }, lat: 38.9115, lng: -77.0468, url: "https://www.phillipscollection.org/" },
+  { slug: "moma", name: { zh: "紐約現代藝術博物館", en: "The Museum of Modern Art" }, city: { zh: "紐約", en: "New York" }, country: { zh: "美國", en: "United States" }, lat: 40.7614, lng: -73.9776, url: "https://www.moma.org/" },
+  { slug: "van-gogh-museum", name: { zh: "梵高博物館", en: "Van Gogh Museum" }, city: { zh: "阿姆斯特丹", en: "Amsterdam" }, country: { zh: "荷蘭", en: "Netherlands" }, lat: 52.3584, lng: 4.8811, url: "https://www.vangoghmuseum.nl/en" },
+  { slug: "kroller-muller", name: { zh: "庫勒慕勒美術館", en: "Kröller-Müller Museum" }, city: { zh: "奧特洛", en: "Otterlo" }, country: { zh: "荷蘭", en: "Netherlands" }, lat: 52.0954, lng: 5.8169, url: "https://krollermuller.nl/en" },
+  { slug: "mfa-boston", name: { zh: "波士頓美術館", en: "Museum of Fine Arts, Boston" }, city: { zh: "波士頓", en: "Boston" }, country: { zh: "美國", en: "United States" }, lat: 42.3394, lng: -71.094, url: "https://www.mfa.org/" },
+  { slug: "philadelphia", name: { zh: "費城藝術博物館", en: "Philadelphia Museum of Art" }, city: { zh: "費城", en: "Philadelphia" }, country: { zh: "美國", en: "United States" }, lat: 39.9656, lng: -75.181, url: "https://philamuseum.org/" },
+  { slug: "national-museum-norway", name: { zh: "挪威國家博物館", en: "National Museum of Norway" }, city: { zh: "奧斯陸", en: "Oslo" }, country: { zh: "挪威", en: "Norway" }, lat: 59.9115, lng: 10.7297, url: "https://www.nasjonalmuseet.no/en/" },
+  { slug: "tretyakov", name: { zh: "特列季亞科夫畫廊", en: "State Tretyakov Gallery" }, city: { zh: "莫斯科", en: "Moscow" }, country: { zh: "俄羅斯", en: "Russia" }, lat: 55.7414, lng: 37.6208, url: "https://www.tretyakovgallery.ru/en/" },
+  { slug: "kunsthaus-zurich", name: { zh: "蘇黎世美術館", en: "Kunsthaus Zürich" }, city: { zh: "蘇黎世", en: "Zürich" }, country: { zh: "瑞士", en: "Switzerland" }, lat: 47.3703, lng: 8.5482, url: "https://www.kunsthaus.ch/en/" },
+];
+
+export const museumMap = Object.fromEntries(museums.map((m) => [m.slug, m]));
