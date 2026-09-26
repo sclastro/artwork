@@ -743,6 +743,25 @@
   font-family: var(--font-sans) !important;
   background: var(--bg-sunk) !important;
 }
+/* 以濾鏡把 OSM 彩色底圖調成配合網站的暖灰（淺色）或炭黑（深色） */
+.museum-map .leaflet-tile-pane {
+  filter: grayscale(1) sepia(0.35) contrast(0.92) brightness(1.04);
+}
+:root[data-theme="dark"] .museum-map .leaflet-tile-pane {
+  filter: grayscale(1) invert(1) brightness(0.78) contrast(1.15) sepia(0.2);
+}
+.leaflet-control-attribution {
+  background: color-mix(in srgb, var(--bg-elev) 85%, transparent) !important;
+  color: var(--ink-3) !important;
+}
+.leaflet-control-attribution a {
+  color: var(--accent-ink) !important;
+}
+.leaflet-bar a {
+  background: var(--bg-elev) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
 .map-pin span {
   width: 34px;
   height: 34px;
@@ -1367,4 +1386,7 @@
   font-size: 0.8rem;
   word-break: break-word;
   color: var(--accent-ink);
+}
+.credits-table .nowrap {
+  white-space: nowrap;
 }

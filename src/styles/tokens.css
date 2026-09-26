@@ -6,7 +6,7 @@
   --bg: #f6f1e7;
   --bg-elev: #fbf8f2;
   --bg-sunk: #eee7d8;
-  --bg-glass: rgba(246, 241, 231, 0.78);
+  --bg-glass: rgba(246, 241, 231, 0.9);
   --ink: #1f1b16;
   --ink-2: #4a4339;
   --ink-3: #7a7163;
@@ -48,7 +48,7 @@
   --bg: #121110;
   --bg-elev: #1b1917;
   --bg-sunk: #0c0b0a;
-  --bg-glass: rgba(18, 17, 16, 0.76);
+  --bg-glass: rgba(18, 17, 16, 0.88);
   --ink: #efe9dc;
   --ink-2: #c7bfb0;
   --ink-3: #928a7c;

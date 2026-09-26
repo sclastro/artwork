@@ -4,10 +4,10 @@ const [url, out, w = "1440", h = "900", theme = "light", full = "0", scrollTo = 
 const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium" });
 const ctx = await browser.newContext({ viewport: { width: +w, height: +h }, deviceScaleFactor: 1, colorScheme: theme === "dark" ? "dark" : "light", reducedMotion: "reduce" });
 // 沙盒中的 Chromium 不信任代理的 CA；外部圖片改由 Node 端（已設定 CA）代為下載
-await ctx.route(/^https:\/\/upload\.wikimedia\.org\//, async (route) => {
+await ctx.route(/^https:\/\//, async (route) => {
   try {
     const r = await fetch(route.request().url(), { headers: { "User-Agent": "TheGalleryWalk/1.0 (https://github.com/sclastro/artwork) test" } });
-    await route.fulfill({ status: r.status, headers: { "content-type": r.headers.get("content-type") ?? "image/jpeg", "access-control-allow-origin": "*" }, body: Buffer.from(await r.arrayBuffer()) });
+    await route.fulfill({ status: r.status, headers: { "content-type": r.headers.get("content-type") ?? "application/octet-stream", "access-control-allow-origin": "*" }, body: Buffer.from(await r.arrayBuffer()) });
   } catch {
     await route.abort();
   }

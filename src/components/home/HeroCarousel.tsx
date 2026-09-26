@@ -74,7 +74,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
             <img
               src={s.src}
               srcSet={s.srcSet}
-              sizes="100vw"
+              sizes="(orientation: portrait) 190vh, 100vw"
               alt=""
               className="kenburns"
               style={{ objectPosition: s.focus, animationDuration: `${DURATION + 2000}ms` }}

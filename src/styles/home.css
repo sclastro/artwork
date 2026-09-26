@@ -203,7 +203,8 @@
     display: none;
   }
   .hero-content {
-    bottom: 150px;
+    bottom: 196px;
+    gap: 14px;
   }
   .hero-shade {
     background:

@@ -237,6 +237,7 @@ export const en: Dict = {
     work: "Work",
     file: "Commons file",
     license: "Licence",
+    publicDomain: "Public domain",
   },
   notFound: {
     title: "This gallery doesn't exist",

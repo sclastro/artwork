@@ -9,7 +9,8 @@
     "test": "vitest run",
     "images": "tsx scripts/fetch-image-meta.ts",
     "serve": "node scripts/serve-out.mjs",
-    "e2e": "node scripts/e2e.mjs"
+    "index": "node scripts/gen-artwork-index.mjs",
+    "shot": "node scripts/shot.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.5.0",

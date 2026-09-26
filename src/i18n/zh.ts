@@ -236,6 +236,7 @@ export const zh = {
     work: "作品",
     file: "Commons 檔案",
     license: "授權",
+    publicDomain: "公有領域",
   },
   notFound: {
     title: "這個展廳並不存在",

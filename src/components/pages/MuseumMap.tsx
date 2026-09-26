@@ -16,10 +16,8 @@ export interface MapMuseum {
   works: { slug: string; title: Bi; thumb: string }[];
 }
 
-const TILES = {
-  light: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-  dark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-};
+// OpenStreetMap 標準底圖（毋須 API key）；深淺色以 CSS 濾鏡配合網站主題，見 pages.css
+const TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -37,10 +35,8 @@ export function MuseumMap({ museums, height = "62vh", zoom }: { museums: MapMuse
       if (cancelled || !el.current || mapRef.current) return;
       const map = L.map(el.current, { scrollWheelZoom: false, worldCopyJump: true, zoomControl: true, attributionControl: true });
       mapRef.current = map;
-      const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
-      tileRef.current = L.tileLayer(TILES[theme], {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: "abcd",
+      tileRef.current = L.tileLayer(TILE_URL, {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 19,
       }).addTo(map);
 
@@ -67,14 +63,8 @@ export function MuseumMap({ museums, height = "62vh", zoom }: { museums: MapMuse
       map.on("mouseout", () => map.scrollWheelZoom.disable());
     });
 
-    const onTheme = (e: Event) => {
-      const theme = (e as CustomEvent<string>).detail === "dark" ? "dark" : "light";
-      tileRef.current?.setUrl(TILES[theme]);
-    };
-    window.addEventListener("tgw:theme", onTheme);
     return () => {
       cancelled = true;
-      window.removeEventListener("tgw:theme", onTheme);
       mapRef.current?.remove();
       mapRef.current = null;
     };

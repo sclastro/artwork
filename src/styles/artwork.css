@@ -332,7 +332,7 @@
     gap: 6px;
     overflow-x: auto;
     padding: 12px var(--gutter);
-    background: var(--bg-glass);
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--line);
@@ -886,4 +886,14 @@
 }
 .openseadragon-container {
   background: transparent !important;
+}
+.dz .navigator {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(12, 11, 10, 0.75) !important;
+  border-radius: 8px;
+  margin: 0 16px 16px 0 !important;
+  overflow: hidden;
+}
+.dz .navigator .displayregion {
+  border: 2px solid #e2c992 !important;
 }

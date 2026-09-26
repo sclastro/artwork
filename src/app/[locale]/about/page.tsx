@@ -57,7 +57,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                       {m.file}
                     </a>
                   </td>
-                  <td>{m.license}</td>
+                  <td className="nowrap">{m.license === "Public domain" ? t.about.publicDomain : m.license}</td>
                 </tr>
               );
             })}

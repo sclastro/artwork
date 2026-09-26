@@ -23,7 +23,7 @@ export function FeaturedArtwork({ slug, src, srcSet, lqip }: { slug: string; src
       <motion.div className="featured-media" style={reduce ? undefined : { scale, y }}>
         <div className="lqip" style={{ backgroundImage: `url(${lqip})` }} />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} srcSet={srcSet} sizes="100vw" alt="" loading="lazy" />
+        <img src={src} srcSet={srcSet} sizes="(orientation: portrait) 190vh, 100vw" alt="" loading="lazy" />
       </motion.div>
       <div className="featured-shade" />
       <motion.div className="featured-content container" style={reduce ? undefined : { y: textY, opacity: textO }}>

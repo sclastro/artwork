@@ -57,7 +57,7 @@ export function GlossaryList({ entries }: { entries: GlossaryEntry[] }) {
                       <p>{e.definition[locale]}</p>
                       {e.works.length > 0 && (
                         <p className="glossary-works">
-                          <span className="muted">{t.glossary.appearsIn}：</span>
+                          <span className="muted">{t.glossary.appearsIn}{locale === "zh" ? "：" : ": "}</span>
                           {e.works.slice(0, 6).map((w, i) => (
                             <span key={w.slug}>
                               {i > 0 && " · "}
