@@ -1,0 +1,71 @@
+/* 設計 token：所有顏色、字體、間距集中於此。深色模式以 data-theme 切換。 */
+:root {
+  color-scheme: light;
+
+  /* 米白紙張 */
+  --bg: #f6f1e7;
+  --bg-elev: #fbf8f2;
+  --bg-sunk: #eee7d8;
+  --bg-glass: rgba(246, 241, 231, 0.78);
+  --ink: #1f1b16;
+  --ink-2: #4a4339;
+  --ink-3: #7a7163;
+  --line: rgba(31, 27, 22, 0.12);
+  --line-strong: rgba(31, 27, 22, 0.24);
+  --accent: #a8894f;
+  --accent-ink: #7a5f2c; /* 用於文字，對比度符合 AA */
+  --accent-soft: rgba(168, 137, 79, 0.14);
+  --danger: #a3372b;
+  --success: #3f6b45;
+  --shadow-sm: 0 1px 2px rgba(31, 27, 22, 0.06), 0 2px 8px rgba(31, 27, 22, 0.05);
+  --shadow-md: 0 10px 30px -12px rgba(31, 27, 22, 0.25);
+  --shadow-art: 0 30px 60px -20px rgba(0, 0, 0, 0.55), 0 12px 24px -12px rgba(0, 0, 0, 0.4);
+
+  /* 展廳舞台（畫作大圖背景）兩種模式皆為深色，令畫作更突出 */
+  --stage: #151311;
+  --stage-ink: #f3ede1;
+  --stage-ink-2: rgba(243, 237, 225, 0.72);
+
+  --font-serif: var(--f-cormorant), var(--f-noto-serif-tc), "Songti TC", "PMingLiU", Georgia, serif;
+  --font-sans: var(--f-inter), var(--f-noto-sans-tc), "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --header-h: 72px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --maxw: 1320px;
+  --readw: 44rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* 炭黑展廳 */
+  --bg: #121110;
+  --bg-elev: #1b1917;
+  --bg-sunk: #0c0b0a;
+  --bg-glass: rgba(18, 17, 16, 0.76);
+  --ink: #efe9dc;
+  --ink-2: #c7bfb0;
+  --ink-3: #928a7c;
+  --line: rgba(239, 233, 220, 0.12);
+  --line-strong: rgba(239, 233, 220, 0.24);
+  --accent: #c9a96a;
+  --accent-ink: #d9bd84;
+  --accent-soft: rgba(201, 169, 106, 0.14);
+  --danger: #e07a6c;
+  --success: #86b98c;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 14px 40px -14px rgba(0, 0, 0, 0.7);
+  --stage: #0c0b0a;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-h: 60px;
+  }
+}
