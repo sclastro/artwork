@@ -811,6 +811,42 @@ export const artists: Artist[] = [
       },
     ],
   },
+  {
+    slug: "toulouse-lautrec",
+    name: { zh: "土魯斯-羅特列克", en: "Henri de Toulouse-Lautrec" },
+    born: 1864,
+    died: 1901,
+    birthPlace: { zh: "法國阿爾比", en: "Albi, France" },
+    nationality: "french",
+    bio: [
+      {
+        zh: "土魯斯-羅特列克出身法國南部的古老貴族世家。少年時雙腿先後骨折，此後腿部停止生長，成年後身高只有約一米五，一般認為與遺傳疾病有關。",
+        en: "Toulouse-Lautrec came from an ancient aristocratic family in the south of France. As a teenager he broke both legs, which then stopped growing; as an adult he stood only about 1.5 metres tall, probably because of a hereditary condition.",
+      },
+      {
+        zh: "他定居巴黎蒙馬特，流連歌舞廳、酒館與妓院，以敏銳的線條描繪夜生活中的舞者、歌手與觀眾。他為紅磨坊等場所設計的石版畫海報，把海報提升為藝術。他酗酒成疾，三十六歲便去世。",
+        en: "He settled in Montmartre, frequenting cabarets, bars and brothels, and captured the dancers, singers and audiences of Paris nightlife with incisive line. His lithographic posters for the Moulin Rouge and other venues raised the poster to an art form. Alcoholism ruined his health, and he died at thirty-six.",
+      },
+    ],
+  },
+  {
+    slug: "rousseau",
+    name: { zh: "亨利·盧梭", en: "Henri Rousseau" },
+    born: 1844,
+    died: 1910,
+    birthPlace: { zh: "法國拉瓦勒", en: "Laval, France" },
+    nationality: "french",
+    bio: [
+      {
+        zh: "盧梭在巴黎的入市稅關任職多年，因此被稱為「海關職員」。他從未受過正規的美術訓練，四十歲左右才開始認真作畫，退休後全職創作。",
+        en: "Rousseau worked for years as a toll collector at the Paris city customs, earning the nickname “le Douanier” (the customs officer). He had no formal art training, began painting seriously around forty, and devoted himself to it full-time after retiring.",
+      },
+      {
+        zh: "他的畫平面、鮮明、細緻而天真，長期被學院與評論家嘲笑，卻得到畢加索等前衛藝術家的欣賞。他筆下的熱帶叢林全憑想像與巴黎植物園的觀察，他本人其實從未離開過法國。他被視為[[naive-art|素人藝術]]最重要的代表。",
+        en: "His flat, vivid, meticulous and innocent paintings were long mocked by academics and critics but admired by avant-garde artists such as Picasso. His tropical jungles came from imagination and visits to the Paris botanical garden; he never actually left France. He is regarded as the foremost figure of [[naive-art]].",
+      },
+    ],
+  },
 ];
 
 export const artistMap = Object.fromEntries(artists.map((a) => [a.slug, a]));
