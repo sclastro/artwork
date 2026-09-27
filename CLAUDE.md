@@ -100,6 +100,9 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 - 縮圖→大圖轉場用 React `<ViewTransition name share="morph">`；不支援的瀏覽器自動退回。
 - **只靠 `:hover` 的提示在手機上等於沒有**；術語與熱點都有靜態樣式，手機熱點以底部抽屜顯示。
 - `.section` 只可設 `padding-block`，否則會蓋掉 `.container` 的左右內距。
+- **首頁 Hero 不要用 `position: absolute; bottom` 擺放文字**：內容只能向上長，英文標題較長、手機又放大字體時，
+  文字曾蓋住頂部導覽列。現改為 flex 排版流（`margin-top: auto` 加上 `padding-top: var(--header-h)`），
+  內容太多時 Hero 會向下延伸。檢查時要試 390px 寬及放大字體（`html { font-size: 130% }`）。
 
 ## 地圖
 
