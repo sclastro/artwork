@@ -1,8 +1,11 @@
 /* ---------- 首頁 Hero ---------- */
+/* 以排版流由下而上排列（內容 → 說明列），不用絕對定位：
+   英文標題較長或手機放大字體時，Hero 會向下延伸，而不是向上蓋住導覽列。 */
 .hero {
   position: relative;
-  height: 100svh;
-  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  min-height: max(100svh, 560px);
   overflow: hidden;
   background: var(--stage);
   color: var(--stage-ink);
@@ -59,12 +62,12 @@
   transition: left 0.25s var(--ease-out), top 0.25s var(--ease-out);
 }
 .hero-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: clamp(140px, 22vh, 220px);
+  margin-top: auto;
+  padding-top: calc(var(--header-h) + 32px);
+  padding-bottom: clamp(40px, 10vh, 120px);
   display: grid;
   gap: 20px;
+  width: 100%;
   max-width: var(--maxw);
 }
 .hero-kicker {
@@ -90,10 +93,8 @@
   margin-top: 8px;
 }
 .hero-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 36px;
+  padding-bottom: 36px;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -203,8 +204,12 @@
     display: none;
   }
   .hero-content {
-    bottom: 196px;
+    padding-top: calc(var(--header-h) + 24px);
+    padding-bottom: 28px;
     gap: 14px;
+  }
+  .lang-en .hero-title {
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
   }
   .hero-shade {
     background:
@@ -215,7 +220,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
-    bottom: 24px;
+    padding-bottom: 24px;
   }
   .hero-dot {
     width: 24px;
