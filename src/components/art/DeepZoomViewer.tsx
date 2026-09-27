@@ -74,6 +74,10 @@ export function DeepZoomViewer({ title, src, srcSmall, aspect, hotspots, initial
         gestureSettingsTouch: { pinchRotate: false, dblClickToZoom: true },
       });
       viewerRef.current = viewer;
+      // 高解像度圖來自 Wikimedia，被限流或失敗時改用自存的 1920px 版本
+      viewer.addHandler("open-failed", () => {
+        if (!small && !destroyed) viewer.open({ type: "image", url: srcSmall, buildPyramid: true } as unknown as OpenSeadragon.TileSourceSpecifier);
+      });
 
       viewer.addHandler("open", () => {
         setReady(true);

@@ -10,7 +10,7 @@
 
 - 技術：**Next.js 16（App Router）+ TypeScript + React 19**，`output: 'export'` 純靜態，無伺服器、無資料庫。
 - 部署：**GitHub Pages**，由 GitHub Actions 建置（`https://sclastro.github.io/artwork/`）。
-- 圖片：**直接引用 Wikimedia Commons**，不存入 repo。
+- 圖片：來源為 Wikimedia Commons，**轉成 WebP 自存於 `public/art/`**（320／960／1920 寬）；只有深度縮放的最高解像度仍向 Wikimedia 取圖。
 
 ## 指令
 
@@ -20,6 +20,7 @@ npm run dev        # http://localhost:3000（basePath 為空）
 npm test           # vitest：內容完整性 + lib 純函數
 npm run build      # 靜態匯出至 out/（等同 typecheck；約 310 頁）
 npm run images     # 重新向 Commons 取得圖片資料，寫入 src/data/images.json
+npm run fetch-images  # 下載並轉成 WebP 存於 public/art/（只補缺少的；--refresh 全部重做）
 npm run index      # 重新產生 src/content/artworks/index.ts
 npm run serve      # 以 GitHub Pages 方式伺服 out/（PAGES_BASE_PATH=/artwork 可測 basePath）
 npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # 截圖
@@ -33,7 +34,7 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 1. 在 `src/content/artworks/<slug>.ts` 新增檔案（仿現有檔案，型別見 `src/content/types.ts`）。
 2. 畫家、博物館不存在時，分別加入 `artists.ts`、`museums.ts`（博物館要有經緯度）。
 3. `npm run index` 更新匯總檔。
-4. `npm run images` 取得圖片尺寸、模糊預覽與主色（非公有領域的檔案會被拒絕）。
+4. `npm run images` 取得圖片尺寸、模糊預覽與主色（非公有領域的檔案會被拒絕），再 `npm run fetch-images` 產生自存 WebP。
 5. `npm test`：會檢查引用、雙語、熱點、術語、廣東話用字等。
 6. 以 `npm run build && npm run serve` 加截圖檢查**熱點位置**（座標是人手估計，務必目測）。
 
@@ -53,7 +54,10 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 
 ## ⚠️ Wikimedia Commons 關鍵知識
 
-- **縮圖只可用標準寬度**：60、250、330、500、960、1280、1920、3840（`THUMB_WIDTHS`）。
+- **為何自存**：直接引用時，連續瀏覽多頁（時間軸一頁已有 60 幅）便會被 upload.wikimedia.org 限流（429），
+  圖片只剩模糊預覽。`lib/images.ts` 的 `imageUrl()`／`srcSet()` 一律回傳 `public/art/` 的檔案，
+  `zoomUrl()` 才指向 Wikimedia；深度縮放載入失敗會自動改用自存 1920px。
+- **縮圖只可用標準寬度**：60、250、330、500、960、1280、1920、3840。
   其他寬度（例如 640）會回 400 或觸發即時縮放限流。要求寬度 ≥ 原圖時 `imageUrl()` 改用原檔。
 - Commons API 會回 **429**：腳本以 40 個一批查詢，並有重試與退避。
 - **User-Agent 只寫 repo 網址**（`TheGalleryWalk/1.0 (https://github.com/sclastro/artwork)`），
@@ -78,6 +82,11 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 - **不要在 render 中用 `useReducedMotion()` 分支**：server 與 client 首次繪製結果不同，
   曾令標題永遠停在 `opacity: 0`。改為在 `LocaleProvider` 包 `<MotionConfig reducedMotion="user">`。
 - Lenis 平滑捲動只在滑鼠裝置且未要求減少動態時啟用；實例放在 `window.__lenis`。
+  **不要開 Lenis 的 `anchors` 選項**：頁內錨點一律用 `onAnchorClick`（`SmoothScroll.tsx`），
+  曾經兩者同時處理同一次點擊，兩段動畫互相打斷，目錄跳到錯誤位置。
+- **頁內元素不要用 `scrollIntoView`**：即使只想橫向捲動標籤列，它也會連整頁一併捲動，
+  並打斷正在進行的平滑捲動。曾令手機打開直幅畫作時整頁自動下捲、熱點被導覽列遮住。
+  改為對容器本身 `scrollTo({ left })`（見 `SectionNav`）。
 - 縮圖→大圖轉場用 React `<ViewTransition name share="morph">`；不支援的瀏覽器自動退回。
 - **只靠 `:hover` 的提示在手機上等於沒有**；術語與熱點都有靜態樣式，手機熱點以底部抽屜顯示。
 - `.section` 只可設 `padding-block`，否則會蓋掉 `.container` 的左右內距。

@@ -8,6 +8,7 @@
     "build": "next build",
     "test": "vitest run",
     "images": "tsx scripts/fetch-image-meta.ts",
+    "fetch-images": "tsx scripts/fetch-images.ts",
     "serve": "node scripts/serve-out.mjs",
     "index": "node scripts/gen-artwork-index.mjs",
     "shot": "node scripts/shot.mjs"

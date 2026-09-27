@@ -155,4 +155,6 @@ export interface ImageMeta {
   lqip: string;
   /** 主色（由多至少） */
   colors: string[];
+  /** 自存於 public/art/ 的 WebP（由 npm run fetch-images 產生）：`${id}-${w}.webp` */
+  local?: { id: string; widths: number[] };
 }
