@@ -757,6 +757,60 @@ export const artists: Artist[] = [
       },
     ],
   },
+  {
+    slug: "aivazovsky",
+    name: { zh: "艾華佐夫斯基", en: "Ivan Aivazovsky" },
+    born: 1817,
+    died: 1900,
+    birthPlace: { zh: "克里米亞費奧多西亞", en: "Feodosia, Crimea" },
+    nationality: "russian",
+    bio: [
+      {
+        zh: "艾華佐夫斯基是亞美尼亞裔的俄國畫家，生於黑海岸邊的港口費奧多西亞。他在聖彼得堡帝國藝術學院學畫，二十多歲便獲委任為俄國海軍總部的畫家。",
+        en: "Aivazovsky was a Russian painter of Armenian descent, born in the Black Sea port of Feodosia. He trained at the Imperial Academy of Arts in St Petersburg and in his twenties was appointed painter to the Main Naval Staff.",
+      },
+      {
+        zh: "他一生畫了約六千幅作品，絕大部分是海景。他很少對景寫生，而是憑記憶在畫室作畫，認為浪花與閃電的一瞬無法照着畫下來。他筆下透光的海水與晨光，令他成為十九世紀最受歡迎的海景畫家之一。",
+        en: "He produced some six thousand works, most of them seascapes. He rarely painted outdoors, working instead from memory in the studio, convinced that a breaking wave or a flash of lightning could not be copied from life. His translucent water and glowing light made him one of the most popular marine painters of the nineteenth century.",
+      },
+    ],
+  },
+  {
+    slug: "cole",
+    name: { zh: "托馬斯·科爾", en: "Thomas Cole" },
+    born: 1801,
+    died: 1848,
+    birthPlace: { zh: "英格蘭蘭開夏郡", en: "Lancashire, England" },
+    nationality: "american",
+    bio: [
+      {
+        zh: "科爾生於英格蘭，十七歲隨家人移居美國，自學成為畫家。1825 年他沿哈德遜河寫生，畫下卡茨基爾山的荒野風光，一舉成名，被視為[[hudson-river-school|哈德遜河畫派]]的奠基人。",
+        en: "Born in England, Cole emigrated with his family to the United States at seventeen and taught himself to paint. In 1825 he sketched along the Hudson River and made his name with views of the Catskill wilderness; he is regarded as the founder of the [[hudson-river-school]].",
+      },
+      {
+        zh: "他不滿足於單純描繪風景，而是以連作講述道德寓言，例如五幅《帝國的歷程》及四幅《人生的旅程》。他四十七歲便因病去世，但深刻影響了美國的風景畫傳統。",
+        en: "Not content with pure landscape, he painted moral allegories in series, such as the five-part Course of Empire and the four-part Voyage of Life. He died of illness at forty-seven, but shaped the whole tradition of American landscape painting.",
+      },
+    ],
+  },
+  {
+    slug: "millais",
+    name: { zh: "米萊", en: "John Everett Millais" },
+    born: 1829,
+    died: 1896,
+    birthPlace: { zh: "英格蘭南安普敦", en: "Southampton, England" },
+    nationality: "english",
+    bio: [
+      {
+        zh: "米萊是神童，十一歲便成為皇家藝術學院史上最年輕的學生。1848 年他與羅塞蒂、亨特創立[[pre-raphaelites|拉斐爾前派]]，主張回歸拉斐爾以前藝術的真誠，以鮮明色彩與細緻入微的自然觀察，反抗學院的陳規。",
+        en: "A child prodigy, Millais became the youngest student ever admitted to the Royal Academy Schools, at eleven. In 1848 he founded the [[pre-raphaelites|Pre-Raphaelite Brotherhood]] with Rossetti and Holman Hunt, seeking the sincerity of art before Raphael and rebelling against academic convention with bright colour and minute observation of nature.",
+      },
+      {
+        zh: "後來他的畫風轉趨通俗，成為維多利亞時代最富有、最受歡迎的畫家之一，獲封男爵，並在去世那年出任皇家藝術學院院長。",
+        en: "His later style became more popular in appeal; he grew into one of the richest and best-loved painters of the Victorian age, was made a baronet, and became President of the Royal Academy in the year of his death.",
+      },
+    ],
+  },
 ];
 
 export const artistMap = Object.fromEntries(artists.map((a) => [a.slug, a]));

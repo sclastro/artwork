@@ -76,6 +76,31 @@
       ]
     }
   },
+  "Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg": {
+    "file": "Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg",
+    "width": 4130,
+    "height": 5710,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg/{w}px-Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_1500_self-portrait_(High_resolution_and_detail).jpg",
+    "artist": "Albrecht Dürer",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAhABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAEEBQMG/8QAJxAAAQIEBQMFAAAAAAAAAAAAAQACAwQRIRITMTJBBWGRJDRRcYH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgH/xAAZEQADAQEBAAAAAAAAAAAAAAAAARECIUH/2gAMAwEAAhEDEQA/APC0PlaEbpeV09kyZiGXOAOWDe6pwWYnA8NV2YnHRJKFDoAGjDt171/FGm7wvKU6Zzdb1RTeutkVkF/Iw1hYhZouNHA8hcS/0+U/RrnEdyphNdiBxAA0FzpXlWeqS0KWDaRA9xdQkHX5p2QXsHnDOG6lEUVJNeES0FosN2j7Uv3eURGKzsfaoiLM+m6P/9k=",
+    "colors": [
+      "#0b0b09",
+      "#351e09",
+      "#583615",
+      "#a47d55"
+    ],
+    "local": {
+      "id": "af47a2317845",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Artemisia Gentileschi - Giuditta decapita Oloferne - Google Art Project.jpg": {
     "file": "Artemisia Gentileschi - Giuditta decapita Oloferne - Google Art Project.jpg",
     "width": 2670,
@@ -95,6 +120,32 @@
     ],
     "local": {
       "id": "a200dc3892a5",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Berthe Morisot - The Cradle - Google Art Project.jpg": {
+    "file": "Berthe Morisot - The Cradle - Google Art Project.jpg",
+    "width": 4105,
+    "height": 5001,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg/{w}px-Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg",
+    "artist": "Berthe Morisot",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAdABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAKRAAAgAFAgYABwAAAAAAAAAAAQIAAwQREgUxBhMhQVGhFCIyU3GBwf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AGrMVfKFHEan4IEfdQ+7RtqU0ThLpFch5zAHHsL/ANjJZaNy6QZTacDNZjG9rN9Pnceo5VuI4ko1Wkk1MlFXAkPioFww3P7AghvXU5q9MnSBYu0okfntBFw0kkcOVScsc6WmHzAoMrnzeHVPpSSizbszl2ONrse8U0Sod9NkZdWQYX84mw9Q2yuB09wukceM1CxbEDEgeTBF6maVsANzaCIr/9k=",
+    "colors": [
+      "#ada190",
+      "#c4b7a2",
+      "#332b24",
+      "#7b7063",
+      "#dfd4c1"
+    ],
+    "local": {
+      "id": "a1fc9e191878",
       "widths": [
         320,
         960,
@@ -154,6 +205,58 @@
       ]
     }
   },
+  "Caspar David Friedrich - Das Eismeer - Hamburger Kunsthalle.jpg": {
+    "file": "Caspar David Friedrich - Das Eismeer - Hamburger Kunsthalle.jpg",
+    "width": 2769,
+    "height": 2152,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg/{w}px-Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle.jpg",
+    "artist": "Caspar David Friedrich",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAATABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUEAgP/xAAmEAACAgIBAgUFAAAAAAAAAAABAgADBBEhBRITIiNBkTFRYXLB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEA//EABsRAAICAwEAAAAAAAAAAAAAAAABAjEDBEER/9oADAMBAAIRAxEAPwDXVkOFBG979p2erP47U2bRlOgT7zMbiWtsqTKZXGvTK/Ovv+ZPtycZW7mGXY4IYC11UgjgfUzeWVcRNHE+srvdazg9rfESdT1PB9Cy9mS5PLs3efW+d64MR47C8oSWu/bIuODeT4r2P+zk/wBmK5zXkvWnCEjY1ESXpUz2tbvYAhdccBQIiIVQGf/Z",
+    "colors": [
+      "#5ea7d2",
+      "#151e1c",
+      "#b1d0e0",
+      "#3d4b48",
+      "#687672"
+    ],
+    "local": {
+      "id": "38a22e914232",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Caspar David Friedrich - Der Mönch am Meer - Google Art Project.jpg": {
+    "file": "Caspar David Friedrich - Der Mönch am Meer - Google Art Project.jpg",
+    "width": 3543,
+    "height": 2254,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg/{w}px-Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg",
+    "artist": "Caspar David Friedrich",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAPABgDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIGBf/EACMQAAIBAgUFAQAAAAAAAAAAAAECAAQRAwUUITESEyIyU2H/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAARYRL/2gAMAwEAAhEDEQA/ANd9Mx8gsQ0VKTcqokstRmj7jCUceziM+LnPSbBAPx4apKhS6CiJ3A4txCSvczhUJbDuLfQQjqgof//Z",
+    "colors": [
+      "#a7afab",
+      "#bcc2bd",
+      "#65736c",
+      "#869593",
+      "#0a1b0e"
+    ],
+    "local": {
+      "id": "40242b29d2be",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Caspar David Friedrich - Wanderer above the Sea of Fog.jpeg": {
     "file": "Caspar David Friedrich - Wanderer above the Sea of Fog.jpeg",
     "width": 5256,
@@ -173,6 +276,32 @@
     ],
     "local": {
       "id": "70b6b90d7d4b",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Claude Monet - The Saint-Lazare Station - Google Art Project.jpg": {
+    "file": "Claude Monet - The Saint-Lazare Station - Google Art Project.jpg",
+    "width": 3708,
+    "height": 2757,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Claude_Monet_-_The_Saint-Lazare_Station_-_Google_Art_Project.jpg/{w}px-Claude_Monet_-_The_Saint-Lazare_Station_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/61/Claude_Monet_-_The_Saint-Lazare_Station_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Saint-Lazare_Station_-_Google_Art_Project.jpg",
+    "artist": "Claude Monet",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDAf/EACAQAAEEAgMBAQEAAAAAAAAAAAEAAgMRBCESMUFhE5H/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAAAEQFB/9oADAMBAAIRAxEAPwDLH/SSMtij2CDzqq+LZuNJISRI/mPmv4sW5X5v5NLXWTfLWu6Vbc2Nk1taa438RchQ5DJYy50w798RWZmZCQWscXkjzq0UlJC0OGwDr1dABsECkRZ9UlDRR0O0RFol/9k=",
+    "colors": [
+      "#6b645b",
+      "#8e8a8a",
+      "#7e786f",
+      "#a39f9b",
+      "#544f49"
+    ],
+    "local": {
+      "id": "8820e6a1d9c6",
       "widths": [
         320,
         960,
@@ -231,6 +360,32 @@
       ]
     }
   },
+  "Cole Thomas The Course of Empire Destruction 1836.jpg": {
+    "file": "Cole Thomas The Course of Empire Destruction 1836.jpg",
+    "width": 8917,
+    "height": 5532,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg/{w}px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+    "artist": "Thomas Cole",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAPABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAjEAACAgIBAgcAAAAAAAAAAAABAgMRAAQhEhMFFDFBgZHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAMAwEAAhEDEQA/ACLXEcLo4JVgDd2PjEN/Uh6DSsGINUMyl8SdAwaeQ8cAev3l4kXbjd+92lSupW6jwffM7pUAaaQ60es6srNMgsFTwcMWSby8hKyhxVAUf3DDs2F//9k=",
+    "colors": [
+      "#30230c",
+      "#4c3a1d",
+      "#645233",
+      "#938464",
+      "#7b6a4b"
+    ],
+    "local": {
+      "id": "159d406678b4",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Composition VII - Wassily Kandinsky, GAC.jpg": {
     "file": "Composition VII - Wassily Kandinsky, GAC.jpg",
     "width": 7015,
@@ -257,6 +412,32 @@
       ]
     }
   },
+  "Courbet LAtelier du peintre.jpg": {
+    "file": "Courbet LAtelier du peintre.jpg",
+    "width": 16951,
+    "height": 9989,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Courbet_LAtelier_du_peintre.jpg/{w}px-Courbet_LAtelier_du_peintre.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Courbet_LAtelier_du_peintre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Courbet_LAtelier_du_peintre.jpg",
+    "artist": "Gustave Courbet",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAOABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAkEAACAQMDBQADAAAAAAAAAAABAgMABBESITEFEyJBYVGBkf/EABUBAQEAAAAAAAAAAAAAAAAAAAMC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8AVm5hiC4UaW981O8SCSBZNGnUgZTjkZ9fNj/KyWvTJrmAHuL5EBcsfH9Y+Uys+iGOYpPPkGJ4vEZwCNiM8c0VyF7SE2rCBZ1dSrOV053290VfLZyWt41qXD9tiFPH5opIjH//2Q==",
+    "colors": [
+      "#1f1a16",
+      "#786452",
+      "#342c27",
+      "#534639",
+      "#a48c72"
+    ],
+    "local": {
+      "id": "53dad8b07532",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Death of Marat by David.jpg": {
     "file": "Death of Marat by David.jpg",
     "width": 4045,
@@ -276,6 +457,32 @@
     ],
     "local": {
       "id": "6f48fe224af3",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Edgar Degas - In a Café - Google Art Project.jpg": {
+    "file": "Edgar Degas - In a Café - Google Art Project.jpg",
+    "width": 3971,
+    "height": 5408,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project.jpg/{w}px-Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project.jpg",
+    "artist": "Edgar Degas",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAhABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAQFAgMGAf/EACwQAAIBAwEFBwUBAAAAAAAAAAECAwAEERIFEyExQSMyM1FhcYEigpGhscH/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8AjNJJBcLu89pIqMOpGnl+62bTuLm27uRGtuiLhupHHK9a53fTzyBd47E8zqJromKjZYgdgpMeguOh8/5XHMW1T7WeW6ngWa3FuYVyccSSvEZ885/FKrLfZd27NGFAiYgO2oHKg5yOfGlVcgWF5dWlmDBMj5I7ipgH54Coa7SQK+6tkAYY7RtRPxVvCsUcSRmFgiH6dTatPr1rCfZ1tNLvFCh88QvI+4HWjYygj1iRgHKasAlcgAeuKVfRQJbalTOTzJxmlF6KRZ+L93+CvF8WT4pSihldd0expSlBf//Z",
+    "colors": [
+      "#847d61",
+      "#9c967a",
+      "#3e3429",
+      "#261c18",
+      "#605844"
+    ],
+    "local": {
+      "id": "508d16bc4e9b",
       "widths": [
         320,
         960,
@@ -361,6 +568,32 @@
       ]
     }
   },
+  "Edouard Manet, A Bar at the Folies-Bergère.jpg": {
+    "file": "Edouard Manet, A Bar at the Folies-Bergère.jpg",
+    "width": 3419,
+    "height": 2553,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg/{w}px-Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Edouard_Manet,_A_Bar_at_the_Folies-Berg%C3%A8re.jpg",
+    "artist": "Édouard Manet",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIFAQME/8QAJRAAAgEEAQMEAwAAAAAAAAAAAQIRAAMEEiETMUEFIkJRcYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/xAAYEQEBAQEBAAAAAAAAAAAAAAAAATECQf/aAAwDAQACEQMRAD8Ag1zKtIpGPI7aEd48kVjI3GFY9RuWlA3mAfj2HH5moDNe67Y2TkXFdyFVVUECR3J/vE+Kpli5fay+RfGLbOm2syZ+vHHP6FGnHcuerziv1XBaOmTxM/dKiMBcTLLX7hdQ0kqsEczzSq2eKSr/AKNrZH6SbcmdRM1rVjI5NKUQC27d68nVRX9vyE+aUpSuX//Z",
+    "colors": [
+      "#6f6b65",
+      "#1b2023",
+      "#494643",
+      "#938b82",
+      "#acaca4"
+    ],
+    "local": {
+      "id": "020d309285cd",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg": {
     "file": "Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg",
     "width": 3223,
@@ -380,6 +613,32 @@
     ],
     "local": {
       "id": "43f2ec5d2dc6",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "El dos de mayo de 1808 en Madrid.jpg": {
+    "file": "El dos de mayo de 1808 en Madrid.jpg",
+    "width": 3051,
+    "height": 2359,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg/{w}px-El_dos_de_mayo_de_1808_en_Madrid.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:El_dos_de_mayo_de_1808_en_Madrid.jpg",
+    "artist": "Francisco Goya",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAwX/xAAlEAEAAQMDAwQDAAAAAAAAAAABAgADEQQhMRJBUQUTMnFCYfD/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQMC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwCc1VstbwymBd9qnnqLdxSAyN8SDJnx/eaiJSs6e9Hqc3I9Pto9u/3nFVWNRpZWLMJRutw2ZMwi/pE2GoW1aSM2tQECWGRxjuUrv6hK1qI29RZlI67iMJsSMQ+uKUaMecqScOOK3bBkCCeGlKTamJ8IfjnjtSlKCj//2Q==",
+    "colors": [
+      "#77614b",
+      "#63472e",
+      "#907e69",
+      "#482f19",
+      "#271507"
+    ],
+    "local": {
+      "id": "ef4e21cbb388",
       "widths": [
         320,
         960,
@@ -595,6 +854,83 @@
       ]
     }
   },
+  "Henri de Toulouse-Lautrec - At the Moulin Rouge - Google Art Project.jpg": {
+    "file": "Henri de Toulouse-Lautrec - At the Moulin Rouge - Google Art Project.jpg",
+    "width": 4331,
+    "height": 3799,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg/{w}px-Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/27/Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_Google_Art_Project.jpg",
+    "artist": "Henri de Toulouse-Lautrec",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAVABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQBAgX/xAAhEAEAAgICAgIDAAAAAAAAAAABAAIDEQQxE1ESIUFhgf/EABcBAAMBAAAAAAAAAAAAAAAAAAEDBAL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMUH/2gAMAwEAAhEDEQA/APGrkLXMYHytbQqkw5LTLctjbUq6NPeu9e51jpgva1s7k0V+ivuS3LXoeTboA/X8k+GrDbjqq65XJawCu/oNqxJOLyLcXKXKFtd1ek9RDZfGFCpZ0zUE3+YiTzp6S4eSzERKSn//2Q==",
+    "colors": [
+      "#403423",
+      "#6a4a11",
+      "#574e34",
+      "#6d6748",
+      "#2c2216"
+    ],
+    "local": {
+      "id": "888897f9967d",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Honoré Daumier, The Third-Class Carriage - The Metropolitan Museum of Art.jpg": {
+    "file": "Honoré Daumier, The Third-Class Carriage - The Metropolitan Museum of Art.jpg",
+    "width": 3811,
+    "height": 2756,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg/{w}px-Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/43/Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier,_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg",
+    "artist": "Honoré Daumier",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAARABgDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAMCAQQG/8QAJxAAAgIBAQcEAwAAAAAAAAAAAQIAAxESBCExMkFxgRMjM2FysfH/xAAXAQEBAQEAAAAAAAAAAAAAAAACAwAB/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAERITH/2gAMAwEAAhEDEQA/APJVmmylQylWVwXcNnKdd3QiY9Jich10ngS33O3sumipvaDs2M6gMeJDa7zZWKglYHMNK4/sjLbeLZk6ihOoDdnvE5VGV8FBn9RGKjfCe8yOK/jETRy+qpzt5iIhJ//Z",
+    "colors": [
+      "#22120c",
+      "#473020",
+      "#6e4b24",
+      "#a57e45"
+    ],
+    "local": {
+      "id": "8e95511e95ea",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Hovhannes Aivazovsky - The Ninth Wave - Google Art Project.jpg": {
+    "file": "Hovhannes Aivazovsky - The Ninth Wave - Google Art Project.jpg",
+    "width": 5090,
+    "height": 3420,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg/{w}px-Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg",
+    "artist": "Hovhannes Aivazovsky (1817 - 1900) – painter (Russian) Born in Rossiiskaya imperiya, Feodosia. Died in Rossiiskaya imperiya, Feodosia. Details on Google Art Pro",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABgDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGA//EACEQAAIBAwQDAQAAAAAAAAAAAAECAAMEIQUSMZERFCJR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGhEAAwADAQAAAAAAAAAAAAAAAAECERIhMf/aAAwDAQACEQMRAD8AxtqKFh9dx1Z2QfgeR+iRFK9ZTtW4Ujn7U4jbTter+zsSrRVQM+WK9GHuKa4xG6HlzaqCRwRCTl1r7b81wzNkgAkdwmpi8ekdyf/Z",
+    "colors": [
+      "#c39c6d",
+      "#9a7465",
+      "#735851",
+      "#1a1616",
+      "#433731"
+    ],
+    "local": {
+      "id": "1ed44ac344e2",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Ilia Efimovich Repin (1844-1930) - Volga Boatmen (1870-1873).jpg": {
     "file": "Ilia Efimovich Repin (1844-1930) - Volga Boatmen (1870-1873).jpg",
     "width": 4586,
@@ -621,6 +957,32 @@
       ]
     }
   },
+  "Irises-Vincent van Gogh.jpg": {
+    "file": "Irises-Vincent van Gogh.jpg",
+    "width": 11516,
+    "height": 8801,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/{w}px-Irises-Vincent_van_Gogh.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Irises-Vincent_van_Gogh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Irises-Vincent_van_Gogh.jpg",
+    "artist": "Vincent van Gogh",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EACUQAAIBBAAFBQEAAAAAAAAAAAECAAMREiExQVGx8AQiMjNhgf/EABgBAAIDAAAAAAAAAAAAAAAAAAMEAAEC/8QAGxEAAwEAAwEAAAAAAAAAAAAAAAECMQMRElH/2gAMAwEAAhEDEQA/AOUqDQLM4DZ4gfnW803TFlYrq2zr+TUMlQWN1sN6t0kMwQ4VCFQbB4g+CYmJBv13hCsz1QrP8VOIHPwRKFULUNIAFti8S7S+Ehsk64a9sj1JOKb4s3aIgo1DlYYJ9jDliD2iIjHLorJ//9k=",
+    "colors": [
+      "#709187",
+      "#547277",
+      "#897c58",
+      "#616a3e",
+      "#354b5c"
+    ],
+    "local": {
+      "id": "d579c7ba80a7",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Jacques-Louis David - Oath of the Horatii - Google Art Project.jpg": {
     "file": "Jacques-Louis David - Oath of the Horatii - Google Art Project.jpg",
     "width": 6156,
@@ -640,6 +1002,32 @@
     ],
     "local": {
       "id": "042f15f730b4",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Jan Vermeer - The Art of Painting - Google Art Project.jpg": {
+    "file": "Jan Vermeer - The Art of Painting - Google Art Project.jpg",
+    "width": 6209,
+    "height": 7377,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg/{w}px-Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg",
+    "artist": "Johannes Vermeer",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAcABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAqEAACAQMCBAQHAAAAAAAAAAABAgMABBESIRMiMVEFQWFxFCMyQoGx0f/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAYEQEBAQEBAAAAAAAAAAAAAAAAASECEf/aAAwDAQACEQMRAD8Ay8MAJbfCrzM/Yf2n47BHt1kImDOMgADHoO/Sl7OD4y/iiyTxJFVmP2gnf89a0F7LEbplUYRmLIuMYUsQAR5dK5dNxRSWcEedRmBAyc6aKa4vHtGBQq+SNAbUc96KoarEuHt5o2jP0EEbVPcXUlyjuI1DuOYgsS243989u9JKcyMD5YAp5ZXPh7RauUSBh6Z6/oU26PMQwxyqvzIwpB2YDc7+dFNwxauIjO7CJdSZPTJGR7UUp//Z",
+    "colors": [
+      "#342a1e",
+      "#201911",
+      "#4a4031",
+      "#6c5e4a",
+      "#92836c"
+    ],
+    "local": {
+      "id": "0ea4786a77d2",
       "widths": [
         320,
         960,
@@ -803,6 +1191,32 @@
       ]
     }
   },
+  "John Everett Millais - Ophelia - Google Art Project.jpg": {
+    "file": "John Everett Millais - Ophelia - Google Art Project.jpg",
+    "width": 7087,
+    "height": 4820,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/{w}px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+    "artist": "John Everett Millais",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABgDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACUQAAIBAwMCBwAAAAAAAAAAAAECAwAEERIhQQVxEyIjMVGhsf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABgRAQEBAQEAAAAAAAAAAAAAAAEAETEC/9oADAMBAAIRAxEAPwDKv+o3N9I0k1wWYNjJOAMjgcVFDdSI+PFLLjBBOxoXCyaBGjqD5lZdQI57d6faxWby62jXQPZUbYfhrDQ7UulVZ3t7BMZ4JWiYHOlTse/BopN5Laxxekr6vnO33RT5F4xl/9k=",
+    "colors": [
+      "#4a4e27",
+      "#343519",
+      "#68693e",
+      "#1b1a0c",
+      "#998d6c"
+    ],
+    "local": {
+      "id": "958449e6e06d",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "John Henry Fuseli - The Nightmare.JPG": {
     "file": "John Henry Fuseli - The Nightmare.JPG",
     "width": 3013,
@@ -821,6 +1235,32 @@
     ],
     "local": {
       "id": "e538d955ca16",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg": {
+    "file": "Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg",
+    "width": 7762,
+    "height": 3718,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Korenveld_met_kraaien_-_s0149V1962_-_Van_Gogh_Museum.jpg/{w}px-Korenveld_met_kraaien_-_s0149V1962_-_Van_Gogh_Museum.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Korenveld_met_kraaien_-_s0149V1962_-_Van_Gogh_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Korenveld_met_kraaien_-_s0149V1962_-_Van_Gogh_Museum.jpg",
+    "artist": "Vincent van Gogh",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMABgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAJRAAAgECBgAHAAAAAAAAAAAAAQIRAAMEBRIUMWETISIyUpHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEE/8QAHhEAAQQCAwEAAAAAAAAAAAAAAQACAwQRIRRRcZH/2gAMAwEAAhEDEQA/ACwuVpt2U3Q6kH28rPVWHye1YJ3apdBELPpE90mGuFVkRIMUynxGOsA+RP0B+1kdcnaSc68TFSPA0s5yOw6mIT4xNVNbuvd06mPJ46qqNu2ux8T4Ma//2Q==",
+    "colors": [
+      "#075088",
+      "#cca617",
+      "#937229",
+      "#c49c4c",
+      "#5097c8"
+    ],
+    "local": {
+      "id": "57857a5c86bc",
       "widths": [
         320,
         960,
@@ -847,6 +1287,58 @@
     ],
     "local": {
       "id": "e2122be07979",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "La Bohémienne endormie.jpg": {
+    "file": "La Bohémienne endormie.jpg",
+    "width": 5411,
+    "height": 3457,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/{w}px-La_Boh%C3%A9mienne_endormie.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
+    "artist": "Henri Rousseau",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAPABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAmEAACAQQBAgYDAAAAAAAAAAABAgMABBESITFhBRQiI1GBkdHh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAEDYRMUQVH/2gAMAwEAAhEDEQA/AJUFk2M6MR2Fat5bWSRY9nXYZBZCAfum18HuI431Yl8HA2wM/quF1cC3iiVbV1uYyGHuelSPjnpS5vDNQrrHvKMbfVeUYhug5OOv4oqLcXcksjvGw1YZcoCuD2BPH9opz0WvZ//Z",
+    "colors": [
+      "#2c5e77",
+      "#4d8ba5",
+      "#7d745e",
+      "#4f4535",
+      "#272118"
+    ],
+    "local": {
+      "id": "05680a8f3575",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "La vision après le sermon (Paul Gauguin).jpg": {
+    "file": "La vision après le sermon (Paul Gauguin).jpg",
+    "width": 5000,
+    "height": 3918,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg/{w}px-La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_(Paul_Gauguin).jpg",
+    "artist": "Paul Gauguin",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAATABgDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFBv/EACcQAAEEAQIFBAMAAAAAAAAAAAEAAgMRBAUhEhMiUWEGIzFBFEJx/8QAFwEBAQEBAAAAAAAAAAAAAAAABAMCBf/EABkRAAMBAQEAAAAAAAAAAAAAAAABAiEDMf/aAAwDAQACEQMRAD8AnzNNeJg2O+c/4DdyTW+21BQyxmB4jnj5bhtuOGldrGc/EyxOZIy95phY/j6BQux3sivC0tHm/NgdlcMJc/p4ZAHFovb47o9SxE3KWowudKSWmNrGk2CBv/PCLcy4cCaO4RCHRn3uUTfb68m0U3z0THeZWJs4KvZr6u1oen8qaLU8eBkhbFLMwvaP2pwpETa8OcijS3vbqWrU4iopKo9nikRFJm14f//Z",
+    "colors": [
+      "#ac411a",
+      "#1a1817",
+      "#5c4632",
+      "#bbb29b",
+      "#968167"
+    ],
+    "local": {
+      "id": "5823ba573e9f",
       "widths": [
         320,
         960,
@@ -924,6 +1416,32 @@
     ],
     "local": {
       "id": "c16dcf7084ab",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Mary Cassatt - Little Girl in a Blue Armchair - NGA 1983.1.18.jpg": {
+    "file": "Mary Cassatt - Little Girl in a Blue Armchair - NGA 1983.1.18.jpg",
+    "width": 4000,
+    "height": 2680,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_NGA_1983.1.18.jpg/{w}px-Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_NGA_1983.1.18.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_NGA_1983.1.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_NGA_1983.1.18.jpg",
+    "artist": "Mary Cassatt",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAX/xAAjEAACAQMEAQUAAAAAAAAAAAABAgMABBESITFBIgUyUWFx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIE/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAERAhIhMf/aAAwDAQACEQMRAD8AybaWNGcRShxpKsBzj7PBpwiuPUJ2mmyQANT4J2GwAAG/4KhASmHXzxgnYVYsL6S2LRRxuvQcHn55pI7UZOWZGDSpLbG3F5cSqRiVZfEooHBGB2NqKXezve6rjD6T7gesEjnsUVD69FzdVpn/2Q==",
+    "colors": [
+      "#38787e",
+      "#12585f",
+      "#49544c",
+      "#6b989a",
+      "#c8cec6"
+    ],
+    "local": {
+      "id": "d16ae0557ab8",
       "widths": [
         320,
         960,
@@ -1087,6 +1605,32 @@
       ]
     }
   },
+  "Peter Paul Rubens - Descent from the Cross - WGA20212.jpg": {
+    "file": "Peter Paul Rubens - Descent from the Cross - WGA20212.jpg",
+    "width": 7484,
+    "height": 4382,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg/{w}px-Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg",
+    "artist": "Peter Paul Rubens",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAOABgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUA/8QAJhAAAQIGAQIHAAAAAAAAAAAAAQIDAAQFESExEgYlEyRBcYGRsf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAMUH/2gAMAwEAAhEDEQA/AJ8hx7rxN70x39ECprLCZZ2YmUFQaTyQAkZUdfA39wijvpWav4baW7U97Q3kRMl33XmwwbFAwkHFtQOTNrFUHkqOo8SUyTZv6jKo0G6hJQxRkgA9vSM+5jRqDQ3/2Q==",
+    "colors": [
+      "#261c16",
+      "#45362b",
+      "#6c5647",
+      "#100c08",
+      "#a1978f"
+    ],
+    "local": {
+      "id": "7aa61ea2e153",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg": {
     "file": "Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
     "width": 9025,
@@ -1191,6 +1735,32 @@
       ]
     }
   },
+  "Raphael - The Sistine Madonna - Google Arts & Culture.jpg": {
+    "file": "Raphael - The Sistine Madonna - Google Arts & Culture.jpg",
+    "width": 7029,
+    "height": 9546,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg/{w}px-Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/05/Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg",
+    "artist": "Raphael",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAmEAACAQMDAwQDAAAAAAAAAAABAgMABBEFEiEiQVETMWFxBhSB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABsRAQADAQADAAAAAAAAAAAAAAEAAhEhEjFB/9oADAMBAAIRAxEAPwBDpGnvf3ILdMKnLHz8U2luYknZXhX9UEK5z1AHGGHkc1Y0h3zAiRoYjHjJI5O3sPuktqk99ParPOypIywl9gOM9qz55PPksZX3IL62ksLp4Jvdc7T5HYiitB+SuqCRDtKFCkZ9zuGM0UGJETIsiaWC1G1iDEqOuOPvmoX9RGMEUm9S4kRlyMGrcKRRXRWZgYvTw53AAdI24phBqjBNjLgKAEBYMQPk/wA7UtbJ2WsDyIr+Uz7nklkkljbYSwwTx3HnNFaJhp16DcSwxtMwyS/BP2M80U5YJPJ//9k=",
+    "colors": [
+      "#ab926c",
+      "#433223",
+      "#2c200f",
+      "#694629",
+      "#876a45"
+    ],
+    "local": {
+      "id": "b29eeae57605",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg": {
     "file": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg",
     "width": 30000,
@@ -1210,6 +1780,84 @@
     ],
     "local": {
       "id": "8d6dabc813b4",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Scène des massacres de Scio, Eugène Delacroix - Musée du Louvre Peintures INV 3823 ; C3.jpg": {
+    "file": "Scène des massacres de Scio, Eugène Delacroix - Musée du Louvre Peintures INV 3823 ; C3.jpg",
+    "width": 6807,
+    "height": 8084,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sc%C3%A8ne_des_massacres_de_Scio%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_%3B_C3.jpg/{w}px-Sc%C3%A8ne_des_massacres_de_Scio%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_%3B_C3.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sc%C3%A8ne_des_massacres_de_Scio%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_%3B_C3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Sc%C3%A8ne_des_massacres_de_Scio,_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_;_C3.jpg",
+    "artist": "Eugène Delacroix",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAcABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBQYE/8QAKBAAAgEEAQIEBwAAAAAAAAAAAQIDAAQRIRIxQQUUIlFSYXGBkbHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAlH/2gAMAwEAAhEDEQA/AOmK2VchWypGtUeWDSY3qqWCe5jhSSecmPIBYtvfy+4qXnZHxNBdvx+B8nv7iqeqCzC7a2KrgCis8t3eyXKXPMgFeShTyB0dmipTFonYkXME0RBdVKhFABIXHXezsUqaOaKWGOMAxZ6KAGwTnB99gVokRWZEIwAAdDHTt9KXeCO5ZEliQhSQpGQR+K04VelBFF4hbzC+toGEHrdBn0hRkEfvVFO8SYIhEY4Dl2Y/2isB/9k=",
+    "colors": [
+      "#858c94",
+      "#acadae",
+      "#746e6e",
+      "#3e3532",
+      "#1b1515"
+    ],
+    "local": {
+      "id": "76894fdb2897",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Slave-ship.jpg": {
+    "file": "Slave-ship.jpg",
+    "width": 2152,
+    "height": 1616,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Slave-ship.jpg/{w}px-Slave-ship.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/26/Slave-ship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Slave-ship.jpg",
+    "artist": "J. M. W. Turner",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMGAgQF/8QAIxAAAQQCAQQDAQAAAAAAAAAAAQACAxEEEiETMUFhBRWRgf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgT/xAAaEQACAgMAAAAAAAAAAAAAAAAAEQECMTJB/9oADAMBAAIRAxEAPwCPBzNcgt12FUQDyFYIJRK0DQDUKpTTOfO89BrT51uz7oKTHy54YZZBuQ1vcc0stnGpohWyWt7Q8UWj87ouHh/KZO1SR9UBoPBoj0UQ0SoNPOFZAI4IaaP6p8ID6mvGg4RFPBmOOKzmgccX/URE7Af/2Q==",
+    "colors": [
+      "#d2bf9a",
+      "#a18357",
+      "#533d24",
+      "#885a32",
+      "#77654c"
+    ],
+    "local": {
+      "id": "468d46de21b2",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Supper at Emmaus-Caravaggio (1601).jpg": {
+    "file": "Supper at Emmaus-Caravaggio (1601).jpg",
+    "width": 11412,
+    "height": 8117,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Supper_at_Emmaus-Caravaggio_%281601%29.jpg/{w}px-Supper_at_Emmaus-Caravaggio_%281601%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Supper_at_Emmaus-Caravaggio_%281601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Supper_at_Emmaus-Caravaggio_(1601).jpg",
+    "artist": "Caravaggio",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAARABgDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBQb/xAAoEAACAgIBAgMJAAAAAAAAAAABAgMRAAQSBSExQUI0UWFxcoGRobL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIRMSFR/9oADAMBAAIRAxEAPwDlNK4L2njSSNTw4vRtiDXY/LJpIhKhaFCKUEIRZayB2r3ZWiikVkE0gWJipJN3xu77Zsw7mj00psaOyJJ0X1I1k+fiK/YwP1GqymYUsTR8ealeShgPgcZqbW0sEDnU6isqzqOaNEwcG742RVD8eWMSsPCrv+0N9K/yMpv44xkjgpaPSv3xjGIDP//Z",
+    "colors": [
+      "#261818",
+      "#4d3126",
+      "#8b6a59",
+      "#090303",
+      "#ddd0c1"
+    ],
+    "local": {
+      "id": "e70b5a7f6b00",
       "widths": [
         320,
         960,
@@ -1371,6 +2019,32 @@
       ]
     }
   },
+  "Tiziano - Venere di Urbino - Google Art Project.jpg": {
+    "file": "Tiziano - Venere di Urbino - Google Art Project.jpg",
+    "width": 3000,
+    "height": 2110,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg/{w}px-Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+    "artist": "Titian",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAARABgDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAYBAwQH/8QAKxAAAgEDAgMGBwAAAAAAAAAAAQIDAAQRITEFBhITNEFRYbEiNXJzgsHC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAETMQIRQRL/2gAMAwEAAhEDEQA/AJG84Te2kKzTxBUZFcEODlW2OAdq02ZRZMv6YHnVtZcdsbviNuyqLUNGUPbAEZ8FyNhoNceldr8v2DyNJHaRqQNFhZRrnOck/qpSNWisZEJB1TiJVczF2Vk6dsH30NKsoOX1ysrLOk7fF1goxB1zkg+PnShtuii8ohW7t+Nen2fy61+0vtSlLjNz4Yj77J9Kf1SlKwB//9k=",
+    "colors": [
+      "#0e080b",
+      "#3f1c15",
+      "#d9b68c",
+      "#f5e6d0",
+      "#6c3f2a"
+    ],
+    "local": {
+      "id": "952485f27692",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
   "Turner - Rain, Steam and Speed - National Gallery file.jpg": {
     "file": "Turner - Rain, Steam and Speed - National Gallery file.jpg",
     "width": 5661,
@@ -1441,6 +2115,31 @@
     ],
     "local": {
       "id": "fdfdd15d705e",
+      "widths": [
+        320,
+        960,
+        1920
+      ]
+    }
+  },
+  "Vincent van Gogh - Almond blossom - Google Art Project.jpg": {
+    "file": "Vincent van Gogh - Almond blossom - Google Art Project.jpg",
+    "width": 3139,
+    "height": 2480,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/{w}px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "page": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg",
+    "artist": "Vincent van Gogh",
+    "license": "Public domain",
+    "lqip": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAATABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBAH/xAAeEAACAgMBAQEBAAAAAAAAAAABAgARAyFBElEikf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABgRAQEBAQEAAAAAAAAAAAAAAAEAMQIR/9oADAMBAAIRAxEAPwDv0zglbozRF9A+fmSyFgqD1QH3nZNcpClmYP5F63KtgFY3077USAyWvq/7EZ7BbWQliSd0NTlyOzEOTssQeRELK9xsSGvhiIi5yLt//9k=",
+    "colors": [
+      "#80a6a7",
+      "#6b979c",
+      "#5d7d70",
+      "#b3c9ba"
+    ],
+    "local": {
+      "id": "e8e72fbfaef4",
       "widths": [
         320,
         960,

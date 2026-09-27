@@ -221,6 +221,13 @@ export const EXTRA_NAMES: Record<string, string | null> = {
   "馬克·吐溫": "Mark Twain",
   "愛麗絲·胡珀": "Alice Hooper",
   "克萊斯特": "Heinrich von Kleist",
+  "帕里": "William Edward Parry",
+  "繆拉": "Joachim Murat",
+  "里德": "Luman Reed",
+  "傑克遜": "Andrew Jackson",
+  "伊麗莎白·西德爾": "Elizabeth Siddal",
+  "西德爾": "Elizabeth Siddal",
+  "哈姆雷特": "Hamlet",
 
   // ── 作品（書籍、電影、樂曲及本站未收錄的畫作） ──
   "《歲時記》": "Fasti",
@@ -282,4 +289,13 @@ export const EXTRA_NAMES: Record<string, string | null> = {
   "《帝國的歷程》": "The Course of Empire",
   "《人生的旅程》": "The Voyage of Life",
   "《希望的謬誤》": "Fallacies of Hope",
+  "《希望號的殘骸》": "The Wreck of Hope",
+  "《路易十三的誓願》": "The Vow of Louis XIII",
+  "《恰爾德·哈羅爾德遊記》": "Childe Harold's Pilgrimage",
+  "《哈姆雷特》": "Hamlet",
+  "《蠻荒》": "The Savage State",
+  "《田園》": "The Arcadian or Pastoral State",
+  "《鼎盛》": "The Consummation of Empire",
+  "《毀滅》": "Destruction",
+  "《荒蕪》": "Desolation",
 };
