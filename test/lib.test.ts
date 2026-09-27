@@ -8,6 +8,7 @@ import { en } from "@/i18n/en";
 import { imageMeta, imageUrl, srcSet, zoomUrl } from "@/lib/images";
 import { artworks } from "@/content/artworks";
 import { PERIOD_SLUGS } from "@/content/types";
+import { annotateNames, nameDictionary } from "@/lib/names";
 
 describe("richText", () => {
   it("parses terms, labelled terms and hotspot links", () => {
@@ -104,6 +105,38 @@ describe("images", () => {
     for (const a of artworks) {
       const m = zoomUrl(a.image).match(/\/(\d+)px-/);
       if (m) expect(m[1]).toBe("3840");
+    }
+  });
+});
+
+describe("English name annotations", () => {
+  it("annotates only the first occurrence on a page, across paragraphs", () => {
+    const out = annotateNames(["梵高與高更同住。", "梵高後來離開，《星夜》也在此時完成。"], "zh");
+    expect(out[0]).toBe("梵高((Vincent van Gogh))與高更((Paul Gauguin))同住。");
+    expect(out[1]).toBe("梵高後來離開，《星夜》((The Starry Night))也在此時完成。");
+  });
+  it("prefers the longest match and respects blocked phrases", () => {
+    expect(annotateNames(["拿破崙三世下令"], "zh")[0]).toBe("拿破崙三世((Napoleon III))下令");
+    expect(annotateNames(["奧斯曼帝國的後宮"], "zh")[0]).toBe("奧斯曼帝國的後宮");
+    expect(annotateNames(["拉斐爾前派畫家"], "zh")[0]).toBe("拉斐爾前派((Pre-Raphaelites))畫家");
+  });
+  it("never annotates inside markup and leaves English pages alone", () => {
+    expect(annotateNames(["[[pre-raphaelites|拉斐爾前派]]與{{0|梵高的柏樹}}"], "zh")[0]).toBe("[[pre-raphaelites|拉斐爾前派]]與{{0|梵高的柏樹}}");
+    expect(annotateNames(["Van Gogh"], "en")[0]).toBe("Van Gogh");
+  });
+  it("parses the annotation as its own token and drops it from plain text", () => {
+    const s = "梵高((Vincent van Gogh))的畫";
+    expect(parseRich(s)).toEqual([
+      { type: "text", text: "梵高" },
+      { type: "en", text: "Vincent van Gogh" },
+      { type: "text", text: "的畫" },
+    ]);
+    expect(plainText(s)).toBe("梵高的畫");
+  });
+  it("has no name keys that are single characters or contain markup", () => {
+    for (const k of nameDictionary().keys()) {
+      expect(k.length, k).toBeGreaterThan(1);
+      expect(k).not.toMatch(/[[\]{}()]/);
     }
   });
 });

@@ -96,6 +96,9 @@ export const IconPlay = (p: P) => (
 export const IconPause = (p: P) => (
   <svg {...base(p)}><path d="M8.5 5.5v13M15.5 5.5v13" /></svg>
 );
+export const IconSpeaker = (p: P) => (
+  <svg {...base(p)}><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4v-5Z" /><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11" /></svg>
+);
 export const IconSwap = (p: P) => (
   <svg {...base(p)}><path d="M7 7h13l-3.5-3.5M17 17H4l3.5 3.5" /></svg>
 );

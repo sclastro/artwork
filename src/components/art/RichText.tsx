@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 import { parseRich } from "@/lib/richText";
 import { useDict, useLocale } from "../LocaleProvider";
 import { useGlossary } from "./GlossaryContext";
+import { SayButton } from "./SayButton";
 
 export function focusHotspot(index: number) {
   window.dispatchEvent(new CustomEvent("tgw:hotspot", { detail: index }));
@@ -59,6 +60,7 @@ function Term({ slug, label }: { slug: string; label?: string }) {
             <strong>{term.term[locale]}</strong>
             <span className="alt" lang={other === "en" ? "en" : "zh-Hant"}>
               {term.term[other]}
+              {other === "en" && <SayButton text={term.term.en} />}
             </span>
             {term.definition[locale].replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, (_, s, l) => l ?? terms[s]?.term[locale] ?? s)}
             <br />
@@ -77,6 +79,13 @@ export function RichText({ text }: { text: string }) {
       {parseRich(text).map((tok, i) => {
         if (tok.type === "text") return <span key={i}>{tok.text}</span>;
         if (tok.type === "term") return <Term key={i} slug={tok.slug} label={tok.label} />;
+        if (tok.type === "en")
+          return (
+            <span key={i} className="en-name" lang="en">
+              （{tok.text}
+              <SayButton text={tok.text} />）
+            </span>
+          );
         return (
           <button key={i} type="button" className="hotspot-link" onClick={() => focusHotspot(tok.index)}>
             {tok.label}

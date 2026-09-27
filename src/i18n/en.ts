@@ -43,6 +43,7 @@ export const en: Dict = {
     previous: "Previous",
     share: "Copy link",
     copied: "Link copied",
+    pronounce: (s: string) => `Say “${s}” at 0.8× speed`,
     addFavorite: "Add to favourites",
     removeFavorite: "Remove from favourites",
     compare: "Compare",

@@ -10,6 +10,7 @@ import { plainText, termSlugs } from "@/lib/richText";
 import { Masonry } from "@/components/art/Masonry";
 import { GlossaryProvider } from "@/components/art/GlossaryContext";
 import { RichText } from "@/components/art/RichText";
+import { annotateNames } from "@/lib/names";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/motion/SplitText";
 
@@ -106,10 +107,10 @@ export default async function ArtistPage({ params }: Params) {
         </Reveal>
 
         <div className="prose artist-bio">
-          {a.bio.map((b, i) => (
+          {annotateNames(a.bio.map((b) => b[locale]), locale).map((b, i) => (
             <Reveal key={i} delay={i * 0.06}>
               <p>
-                <RichText text={b[locale]} />
+                <RichText text={b} />
               </p>
             </Reveal>
           ))}

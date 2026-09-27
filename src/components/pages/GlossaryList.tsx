@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Bi } from "@/content/types";
 import { useDict, useLocale } from "../LocaleProvider";
+import { SayButton } from "../art/SayButton";
 import { IconSearch } from "../icons";
 
 export interface GlossaryEntry {
@@ -50,8 +51,14 @@ export function GlossaryList({ entries }: { entries: GlossaryEntry[] }) {
                 .map((e) => (
                   <div key={e.slug} id={e.slug} className="glossary-item">
                     <dt>
-                      <strong>{e.term[locale]}</strong>
-                      <span lang={other === "en" ? "en" : "zh-Hant"}>{e.term[other]}</span>
+                      <strong>
+                        {e.term[locale]}
+                        {locale === "en" && <SayButton text={e.term.en} />}
+                      </strong>
+                      <span lang={other === "en" ? "en" : "zh-Hant"}>
+                        {e.term[other]}
+                        {other === "en" && <SayButton text={e.term.en} />}
+                      </span>
                     </dt>
                     <dd>
                       <p>{e.definition[locale]}</p>
