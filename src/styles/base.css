@@ -1107,6 +1107,47 @@ p {
   color: var(--accent-ink);
   border-bottom-style: solid;
 }
+/* 中文內文中的英文人名／作品名：較淡、較細，不搶正文 */
+.en-name {
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 0.86em;
+  letter-spacing: 0;
+}
+/* 以 0.8 倍速讀出英文的小喇叭掣（手機觸控範圍以 padding 放大） */
+.say-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -0.15em;
+  margin-left: 3px;
+  padding: 3px;
+  border-radius: 999px;
+  color: var(--accent-ink);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.say-btn:hover,
+.say-btn:focus-visible {
+  background: var(--accent-soft);
+}
+.say-btn.is-on {
+  color: #fff;
+  background: var(--accent);
+  animation: say-pulse 1.1s ease-in-out infinite;
+}
+@keyframes say-pulse {
+  50% {
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .say-btn.is-on {
+    animation: none;
+  }
+}
 .term-pop {
   position: absolute;
   z-index: 120;

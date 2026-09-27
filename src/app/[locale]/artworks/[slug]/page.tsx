@@ -18,6 +18,7 @@ import {
   relatedWorks,
 } from "@/lib/data";
 import { getCatalog } from "@/lib/catalog";
+import { annotateNames } from "@/lib/names";
 import { absoluteUrl, aspect, imageMeta, imageUrl, srcSet, zoomUrl } from "@/lib/images";
 import { plainText, termSlugs } from "@/lib/richText";
 import { ArtworkHero } from "@/components/art/ArtworkHero";
@@ -100,6 +101,17 @@ export default async function ArtworkPage({ params }: Params) {
   used.forEach((s) => glossaryMap[s] && termSlugs(glossaryMap[s].definition[locale]).forEach((x) => used.add(x)));
   const terms: Record<string, GlossaryTerm> = Object.fromEntries([...used].filter((s) => glossaryMap[s]).map((s) => [s, glossaryMap[s]]));
 
+  // 中文內文：人名與作品名在本頁首次出現時附上英文（按頁面次序處理）
+  const seen = new Set<string>();
+  const tx = {
+    summary: annotateNames([a.summary[locale]], locale, seen)[0],
+    background: annotateNames(a.background.map((b) => b[locale]), locale, seen),
+    technique: annotateNames(a.technique.map((b) => b[locale]), locale, seen),
+    symbolism: annotateNames(a.symbolism.map((b) => b.body[locale]), locale, seen),
+    anecdotes: annotateNames(a.anecdotes.map((b) => b[locale]), locale, seen),
+    legacy: annotateNames(a.legacy.map((b) => b[locale]), locale, seen),
+  };
+
   const sections = [
     { id: "facts", label: t.artwork.facts },
     { id: "background", label: t.artwork.background },
@@ -155,7 +167,7 @@ export default async function ArtworkPage({ params }: Params) {
         <article className="art-article">
           <Reveal>
             <p className="art-summary">
-              <RichText text={a.summary[locale]} />
+              <RichText text={tx.summary} />
             </p>
           </Reveal>
 
@@ -216,7 +228,7 @@ export default async function ArtworkPage({ params }: Params) {
           <section id="background" className="art-section">
             <SectionTitle n={2} title={t.artwork.background} />
             <div className={`prose ${/^[A-Za-z\u3400-\u9fff]/.test(a.background[0]?.[locale] ?? "") ? "dropcap" : ""}`}>
-              <Paragraphs items={a.background.map((b) => b[locale])} />
+              <Paragraphs items={tx.background} />
             </div>
           </section>
 
@@ -224,7 +236,7 @@ export default async function ArtworkPage({ params }: Params) {
           <section id="technique" className="art-section">
             <SectionTitle n={3} title={t.artwork.technique} />
             <div className="prose">
-              <Paragraphs items={a.technique.map((b) => b[locale])} />
+              <Paragraphs items={tx.technique} />
             </div>
             {a.hotspots.length > 0 && (
               <div className="details">
@@ -261,7 +273,7 @@ export default async function ArtworkPage({ params }: Params) {
                     <div>
                       <h3>{s.title[locale]}</h3>
                       <p>
-                        <RichText text={s.body[locale]} />
+                        <RichText text={tx.symbolism[i]} />
                       </p>
                     </div>
                   </Reveal>
@@ -278,7 +290,7 @@ export default async function ArtworkPage({ params }: Params) {
                 <Reveal as="li" key={i} delay={i * 0.05}>
                   <span className="anecdote-num">{t.artwork.didYouKnow}</span>
                   <p>
-                    <RichText text={x[locale]} />
+                    <RichText text={tx.anecdotes[i]} />
                   </p>
                 </Reveal>
               ))}
@@ -289,7 +301,7 @@ export default async function ArtworkPage({ params }: Params) {
           <section id="legacy" className="art-section">
             <SectionTitle n={6} title={t.artwork.legacy} />
             <div className="prose">
-              <Paragraphs items={a.legacy.map((b) => b[locale])} />
+              <Paragraphs items={tx.legacy} />
             </div>
           </section>
         </article>

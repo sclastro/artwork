@@ -84,7 +84,7 @@ const artwork: Artwork = {
   ],
   legacy: [
     {
-      zh: "《宮娥》對後世畫家影響深遠。戈雅以蝕刻版畫臨摹過它，馬奈稱委拉斯開茲為「畫家中的畫家」，並從他身上學會了鬆動的筆觸與灰黑的色調。",
+      zh: "《宮娥》對後世畫家影響深遠。哥雅以蝕刻版畫臨摹過它，馬奈稱委拉斯開茲為「畫家中的畫家」，並從他身上學會了鬆動的筆觸與灰黑的色調。",
       en: "Las Meninas profoundly influenced later painters. Goya made an etching after it; Manet called Velázquez “the painter of painters” and learned his loose brushwork and tonal greys from him.",
     },
     {

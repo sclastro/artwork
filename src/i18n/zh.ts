@@ -42,6 +42,7 @@ export const zh = {
     previous: "上一幅",
     share: "複製連結",
     copied: "已複製連結",
+    pronounce: (s: string) => `以 0.8 倍速讀出「${s}」`,
     addFavorite: "加入收藏",
     removeFavorite: "取消收藏",
     compare: "加入比較",

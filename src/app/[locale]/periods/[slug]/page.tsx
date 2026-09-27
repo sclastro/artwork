@@ -12,6 +12,7 @@ import { plainText, termSlugs } from "@/lib/richText";
 import { Masonry } from "@/components/art/Masonry";
 import { GlossaryProvider } from "@/components/art/GlossaryContext";
 import { RichText } from "@/components/art/RichText";
+import { annotateNames } from "@/lib/names";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/motion/SplitText";
 import { Parallax } from "@/components/motion/Parallax";
@@ -45,6 +46,9 @@ export default async function PeriodPage({ params }: Params) {
   const next = periods[i + 1];
 
   const text = [...p.intro, ...p.traits.flatMap((x) => [x.body])].map((b) => b[locale]).join(" ");
+  const seen = new Set<string>();
+  const intro = annotateNames(p.intro.map((x) => x[locale]), locale, seen);
+  const traits = annotateNames(p.traits.map((x) => x.body[locale]), locale, seen);
   const terms = Object.fromEntries(termSlugs(text).filter((s) => glossaryMap[s]).map((s) => [s, glossaryMap[s]]));
 
   return (
@@ -74,10 +78,10 @@ export default async function PeriodPage({ params }: Params) {
 
       <section className="section container period-intro">
         <div className="prose period-prose">
-          {p.intro.map((x, k) => (
+          {intro.map((x, k) => (
             <Reveal key={k} delay={k * 0.06}>
               <p>
-                <RichText text={x[locale]} />
+                <RichText text={x} />
               </p>
             </Reveal>
           ))}
@@ -91,7 +95,7 @@ export default async function PeriodPage({ params }: Params) {
                 <div>
                   <h3>{tr.title[locale]}</h3>
                   <p>
-                    <RichText text={tr.body[locale]} />
+                    <RichText text={traits[k]} />
                   </p>
                 </div>
               </Reveal>
