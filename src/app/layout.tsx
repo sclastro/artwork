@@ -21,7 +21,7 @@ const notoSans = Noto_Sans_TC({ weight: ["400", "500"], variable: "--f-noto-sans
 
 export const metadata: Metadata = {
   title: { default: "The Gallery Walk", template: "%s · The Gallery Walk" },
-  description: "由文藝復興到現代，六十幅西洋名畫的中英雙語深度導賞。",
+  description: "由文藝復興到現代，八十七幅西洋名畫的中英雙語深度導賞。",
   icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/favicon.svg` },
 };
 

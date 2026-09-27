@@ -4,7 +4,7 @@
 
 ## 這是什麼
 
-**The Gallery Walk（藝廊漫遊）**：中英雙語名畫導賞網站。60 幅公有領域名畫、十個時期
+**The Gallery Walk（藝廊漫遊）**：中英雙語名畫導賞網站。87 幅公有領域名畫、十個時期
 （重點在浪漫主義至後印象派），每幅畫有六個分段的詳細導賞、深度縮放與熱點標註；
 另有時間軸、畫家、博物館地圖、探索篩選、⌘K 搜尋、收藏、小測驗、比較、詞彙表。
 
@@ -18,7 +18,7 @@
 npm install
 npm run dev        # http://localhost:3000（basePath 為空）
 npm test           # vitest：內容完整性 + lib 純函數
-npm run build      # 靜態匯出至 out/（等同 typecheck；約 310 頁）
+npm run build      # 靜態匯出至 out/（等同 typecheck；約 400 頁）
 npm run images     # 重新向 Commons 取得圖片資料，寫入 src/data/images.json
 npm run fetch-images  # 下載並轉成 WebP 存於 public/art/（只補缺少的；--refresh 全部重做）
 npm run index      # 重新產生 src/content/artworks/index.ts
@@ -35,6 +35,7 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 2. 畫家、博物館不存在時，分別加入 `artists.ts`、`museums.ts`（博物館要有經緯度）。
 3. `npm run index` 更新匯總檔。
 4. `npm run images` 取得圖片尺寸、模糊預覽與主色（非公有領域的檔案會被拒絕），再 `npm run fetch-images` 產生自存 WebP。
+   兩個腳本都以現有作品檔為準，**沒有作品檔引用的圖片會被刪除**：要先寫好作品檔再執行，不要預先下載。
 5. `npm test`：會檢查引用、雙語、熱點、術語、廣東話用字等。
 6. 以 `npm run build && npm run serve` 加截圖檢查**熱點位置**（座標是人手估計，務必目測）。
 
@@ -52,14 +53,14 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
 - **英文人名與作品名**：中文頁面中，人名與作品名在「每頁首次出現」時自動附上英文（旁邊有 0.8 倍速發音掣）。
   對照表 = 畫家（`artists.ts`）＋本站作品（`《標題》`）＋ `src/content/names.ts` 的其他名稱。
   **新增內容時，文中新出現的人名、書名、電影名要加入 `names.ts`**；短名稱易誤配（曾有「波希米亞」誤中「波希」、
-  「莫斯科特列季亞科夫」誤中「科特」），可加 `null` 鍵擋住。同一人全站只用一個譯名（例如一律「哥雅」，不用「戈雅」）。
+  「莫斯科特列季亞科夫」誤中「科特」），可加 `null` 鍵擋住，或改用較長的鍵（例如用「繼承人維多利亞」而非「維多利亞」，免得誤中「維多利亞時代」）。同一人全站只用一個譯名（例如一律「哥雅」，不用「戈雅」）。
 - 中文內容用正統書面語；`test/content.test.ts` 會拒絕 `嘅咗喺唔冇啲嗰俾`。
 - 事實須查證（博物館官方頁、Wikipedia）。曾更正過的例子：《拿破崙跨越阿爾卑斯山》採用美景宮版本（264×232）；
   轉售權趣聞屬《晚禱》而非《拾穗》。
 
 ## ⚠️ Wikimedia Commons 關鍵知識
 
-- **為何自存**：直接引用時，連續瀏覽多頁（時間軸一頁已有 60 幅）便會被 upload.wikimedia.org 限流（429），
+- **為何自存**：直接引用時，連續瀏覽多頁（時間軸一頁已有 87 幅）便會被 upload.wikimedia.org 限流（429），
   圖片只剩模糊預覽。`lib/images.ts` 的 `imageUrl()`／`srcSet()` 一律回傳 `public/art/` 的檔案，
   `zoomUrl()` 才指向 Wikimedia；深度縮放載入失敗會自動改用自存 1920px。
 - **縮圖只可用標準寬度**：60、250、330、500、960、1280、1920、3840。

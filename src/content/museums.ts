@@ -38,6 +38,8 @@ export const museums: Museum[] = [
   { slug: "scottish-national-gallery", name: { zh: "蘇格蘭國家美術館", en: "Scottish National Gallery" }, city: { zh: "愛丁堡", en: "Edinburgh" }, country: { zh: "英國", en: "United Kingdom" }, lat: 55.9509, lng: -3.1957, url: "https://www.nationalgalleries.org/" },
   { slug: "courtauld", name: { zh: "科陶德美術館", en: "The Courtauld Gallery" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.5111, lng: -0.1171, url: "https://courtauld.ac.uk/gallery/" },
   { slug: "met", name: { zh: "大都會藝術博物館", en: "The Metropolitan Museum of Art" }, city: { zh: "紐約", en: "New York" }, country: { zh: "美國", en: "United States" }, lat: 40.7794, lng: -73.9632, url: "https://www.metmuseum.org/" },
+  { slug: "dresden-old-masters", name: { zh: "德勒斯登歷代大師畫廊", en: "Gemäldegalerie Alte Meister" }, city: { zh: "德勒斯登", en: "Dresden" }, country: { zh: "德國", en: "Germany" }, lat: 51.0535, lng: 13.7347, url: "https://gemaeldegalerie.skd.museum/en/" },
+  { slug: "antwerp-cathedral", name: { zh: "安特衛普聖母大教堂", en: "Cathedral of Our Lady, Antwerp" }, city: { zh: "安特衛普", en: "Antwerp" }, country: { zh: "比利時", en: "Belgium" }, lat: 51.2203, lng: 4.4015, url: "https://www.dekathedraal.be/en/" },
 ];
 
 export const museumMap = Object.fromEntries(museums.map((m) => [m.slug, m]));

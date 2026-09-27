@@ -4,7 +4,7 @@ export const en: Dict = {
   site: {
     name: "The Gallery Walk",
     tagline: "A walk through great paintings",
-    description: "From the Renaissance to Modernism: six centuries of Western painting, with in-depth bilingual guides to sixty masterpieces.",
+    description: "From the Renaissance to Modernism: six centuries of Western painting, with in-depth bilingual guides to eighty-seven masterpieces.",
   },
   nav: {
     home: "Home",
@@ -62,14 +62,14 @@ export const en: Dict = {
     play: "Play",
   },
   home: {
-    kicker: "Six centuries · Ten periods · Sixty masterpieces",
+    kicker: "Six centuries · Ten periods · Eighty-seven masterpieces",
     title: "Step into the world of great paintings",
     subtitle: "From Botticelli's Venus to Van Gogh's night sky, every painting has a story. Scroll slowly and step inside.",
     start: "Begin the walk",
     featuredKicker: "In focus",
     introTitle: "A museum in your pocket",
     introBody:
-      "Here you will find sixty of the most celebrated paintings in Western art. Each comes with its background, an analysis of technique, a reading of its symbols and a few stories, and you can zoom in close enough to see the brushstrokes. Browse by period, artist, museum or date, or test yourself with a quiz.",
+      "Here you will find eighty-seven of the most celebrated paintings in Western art. Each comes with its background, an analysis of technique, a reading of its symbols and a few stories, and you can zoom in close enough to see the brushstrokes. Browse by period, artist, museum or date, or test yourself with a quiz.",
     periodsTitle: "Browse by period",
     periodsBody: "From the rational order of the Renaissance to the passion of Romanticism and the abstraction of modern art.",
     featuredTitle: "The Starry Night",
@@ -148,7 +148,7 @@ export const en: Dict = {
   },
   museums: {
     title: "Museums",
-    intro: "The sixty paintings hang in more than thirty museums and churches around the world. Tap a marker to see what each one holds.",
+    intro: "The eighty-seven paintings hang in nearly forty museums and churches around the world. Tap a marker to see what each one holds.",
     works: "Works held here",
     website: "Official website",
     mapLabel: "Map of museums",
@@ -233,7 +233,7 @@ export const en: Dict = {
   about: {
     title: "About",
     body: [
-      "The Gallery Walk is a bilingual (English and Chinese) guide to sixty key works of Western painting from the Renaissance to the early twentieth century, written to make art history approachable.",
+      "The Gallery Walk is a bilingual (English and Chinese) guide to eighty-seven key works of Western painting from the Renaissance to the early twentieth century, written to make art history approachable.",
       "Every painting is in the public domain. Images are served directly from Wikimedia Commons and are not stored on this site. The texts draw on museum sources and published literature; corrections are always welcome.",
       "Favourites and quiz results stay in your own browser. There are no accounts and no personal data is collected.",
     ],
