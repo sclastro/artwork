@@ -901,6 +901,60 @@ export const artists: Artist[] = [
       },
     ],
   },
+  {
+    slug: "titian",
+    name: { zh: "提香", en: "Titian" },
+    born: 1490,
+    died: 1576,
+    birthPlace: { zh: "意大利皮耶韋迪卡多雷", en: "Pieve di Cadore, Italy" },
+    nationality: "italian",
+    bio: [
+      {
+        zh: "提香是威尼斯畫派最偉大的畫家，早年師從喬凡尼·貝利尼，並與喬爾喬內共事。威尼斯畫家重視[[colorito|色彩]]多於素描，提香把這種傳統發揮到極致，以豐富的色層與溫暖的光線描繪人體與布料。",
+        en: "Titian was the greatest painter of the Venetian school. He trained under Giovanni Bellini and worked alongside Giorgione. Venetian painters valued [[colorito]] over drawing, and Titian took that tradition to its height, rendering flesh and fabric in rich layers of colour and warm light.",
+      },
+      {
+        zh: "他的贊助人包括神聖羅馬帝國皇帝查理五世與西班牙國王腓力二世，名滿歐洲。晚年筆觸愈來愈自由粗放，據說有時直接以手指作畫，深深影響了後來的魯本斯、委拉斯開茲與林布蘭。",
+        en: "His patrons included the Holy Roman Emperor Charles V and Philip II of Spain, and his fame spread across Europe. In old age his brushwork grew ever looser — he is said sometimes to have painted with his fingers — deeply influencing Rubens, Velázquez and Rembrandt.",
+      },
+    ],
+  },
+  {
+    slug: "durer",
+    name: { zh: "杜勒", en: "Albrecht Dürer" },
+    born: 1471,
+    died: 1528,
+    birthPlace: { zh: "德國紐倫堡", en: "Nuremberg, Germany" },
+    nationality: "german",
+    bio: [
+      {
+        zh: "杜勒是金匠之子，自少受過精細的工藝訓練。他兩度前往威尼斯，把意大利文藝復興的透視、比例與人體理論帶回北方，是北方文藝復興最重要的藝術家。",
+        en: "The son of a goldsmith, Dürer was trained from boyhood in meticulous craftsmanship. He travelled twice to Venice and brought the Italian Renaissance theories of perspective, proportion and anatomy back to the north, becoming the leading artist of the Northern Renaissance.",
+      },
+      {
+        zh: "他的木刻與銅版畫如《啟示錄》、《憂鬱 I》與《犀牛》流傳全歐，令他成為第一位聞名國際的版畫家。他以「AD」字母組合作簽名，也是最早反覆為自己畫像的畫家之一。",
+        en: "His woodcuts and engravings, such as the Apocalypse, Melencolia I and the Rhinoceros, circulated throughout Europe and made him the first internationally famous printmaker. He signed with his “AD” monogram and was among the first painters to portray himself again and again.",
+      },
+    ],
+  },
+  {
+    slug: "rubens",
+    name: { zh: "魯本斯", en: "Peter Paul Rubens" },
+    born: 1577,
+    died: 1640,
+    birthPlace: { zh: "德國錫根", en: "Siegen, Germany" },
+    nationality: "flemish",
+    bio: [
+      {
+        zh: "魯本斯在安特衛普長大，1600 至 1608 年留學意大利，研習米開朗基羅、提香與卡拉瓦喬。回國後成為統治尼德蘭南部的阿爾伯特大公與伊莎貝拉的宮廷畫家，並經營一間規模龐大的工作室。",
+        en: "Rubens grew up in Antwerp and spent 1600–1608 in Italy studying Michelangelo, Titian and Caravaggio. Back home he became court painter to Archduke Albert and Archduchess Isabella, rulers of the Southern Netherlands, and ran a vast workshop.",
+      },
+      {
+        zh: "他的畫充滿動感、豐腴的人體與熾熱的色彩，是巴洛克藝術的典範。他同時是一位外交官，曾為英國國王查理一世與西班牙國王腓力四世斡旋和約，兩國君主都封他為爵士。",
+        en: "His paintings, full of movement, ample figures and glowing colour, epitomise Baroque art. He was also a diplomat who helped negotiate peace between Charles I of England and Philip IV of Spain, and both kings knighted him.",
+      },
+    ],
+  },
 ];
 
 export const artistMap = Object.fromEntries(artists.map((a) => [a.slug, a]));
