@@ -21,7 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const t = getDict(locale);
   return {
-    title: { default: `${t.site.name} · ${t.site.tagline}`, template: `%s · ${t.site.name}` },
+    // default 用 absolute，否則 root layout 的 template 會再加一次網站名稱
+    title: { absolute: `${t.site.name} · ${t.site.tagline}`, template: `%s · ${t.site.name}` },
     description: t.site.description,
     alternates: { languages: { "zh-Hant": "/zh/", en: "/en/" } },
     openGraph: { siteName: t.site.name, type: "website", locale: locale === "zh" ? "zh_HK" : "en_GB" },

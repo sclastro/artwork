@@ -84,7 +84,7 @@ const artwork: Artwork = {
   ],
   hotspots: [
     { x: 0.79, y: 0.45, title: { zh: "牽猴子的女子", en: "The woman with a monkey" }, body: { zh: "打扮入時的女子牽着一隻猴子，身旁是戴高禮帽的男伴。", en: "A fashionably dressed woman with a monkey on a leash, her companion in a top hat." } },
-    { x: 0.71, y: 0.86, title: { zh: "猴子", en: "The monkey" }, body: { zh: "女子腳邊的小猴子，是畫中的奇特細節。", en: "The little monkey at the woman's feet is one of the painting's oddest details." } },
+    { x: 0.745, y: 0.8, title: { zh: "猴子", en: "The monkey" }, body: { zh: "女子腳邊的小猴子，是畫中的奇特細節。", en: "The little monkey at the woman's feet is one of the painting's oddest details." } },
     { x: 0.1, y: 0.45, title: { zh: "釣魚的女子", en: "The woman fishing" }, body: { zh: "左方河邊垂釣的女子。", en: "A woman fishing by the river on the left." } },
     { x: 0.46, y: 0.5, title: { zh: "白衣小女孩", en: "The girl in white" }, body: { zh: "畫面中央穿白衣的小女孩直視觀者。", en: "The little girl in white at the centre looks straight at us." } },
     { x: 0.44, y: 0.75, title: { zh: "黑狗", en: "The black dog" }, body: { zh: "低頭嗅地的黑狗。", en: "A black dog with its nose to the ground." } },

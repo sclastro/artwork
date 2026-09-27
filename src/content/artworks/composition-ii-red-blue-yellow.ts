@@ -79,7 +79,7 @@ const artwork: Artwork = {
     { x: 0.94, y: 0.93, title: { zh: "黃色", en: "The yellow" }, body: { zh: "右下角一小塊黃色，是畫中最細小卻最明亮的色塊。", en: "A small patch of yellow in the lower right corner, the smallest yet brightest block." } },
     { x: 0.24, y: 0.72, title: { zh: "黑線的交會", en: "Where the black lines meet" }, body: { zh: "水平與垂直的黑線在此交會，粗細並不一致。", en: "Horizontal and vertical black lines intersect here, their widths uneven." } },
     { x: 0.12, y: 0.15, title: { zh: "白色平面", en: "The white planes" }, body: { zh: "白色的區域並非空白，而是與色塊同樣重要的構成元素。", en: "The white areas are not empty but compositional elements as important as the colours." } },
-    { x: 0.19, y: 0.97, title: { zh: "簽名", en: "The signature" }, body: { zh: "左下角的縮寫簽名「PM 30」。", en: "The monogram “PM 30” at lower left." } },
+    { x: 0.15, y: 0.96, title: { zh: "簽名", en: "The signature" }, body: { zh: "左下角的縮寫簽名「PM 30」。", en: "The monogram “PM 30” at lower left." } },
   ],
   related: ["composition-vii", "the-kiss", "mont-sainte-victoire"],
 };

@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { artworks } from "@/content/artworks";
 import { artists, artistMap } from "@/content/artists";
@@ -8,7 +10,7 @@ import { PERIOD_SLUGS, type Bi } from "@/content/types";
 import imagesJson from "@/data/images.json";
 import { hotspotIndexes, termSlugs } from "@/lib/richText";
 
-const images = imagesJson as Record<string, { license: string; width: number; height: number; thumb: string }>;
+const images = imagesJson as Record<string, { license: string; width: number; height: number; thumb: string; local?: { id: string; widths: number[] } }>;
 
 /** 收集物件中所有雙語欄位 */
 function collectBi(obj: unknown, path = "", out: { path: string; bi: Bi }[] = []) {
@@ -34,6 +36,11 @@ describe("artworks", () => {
     expect(img, `image metadata for ${a.image}`).toBeDefined();
     expect(img.license).toMatch(/public domain|pd|cc0/i);
     expect(img.thumb).toContain("{w}px-");
+    // 自存圖片（npm run fetch-images）
+    expect(img.local, `local images for ${a.image}; run npm run fetch-images`).toBeDefined();
+    for (const w of img.local!.widths) {
+      expect(fs.existsSync(path.join(__dirname, "../public/art", `${img.local!.id}-${w}.webp`)), `${img.local!.id}-${w}.webp`).toBe(true);
+    }
   });
 
   it.each(artworks.map((a) => [a.slug, a] as const))("%s has complete bilingual content", (_, a) => {

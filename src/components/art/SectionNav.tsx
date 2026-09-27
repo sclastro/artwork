@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
 import { useDict } from "../LocaleProvider";
+import { onAnchorClick } from "../motion/SmoothScroll";
 
 /** 側邊目錄（scroll-spy）＋頂部閱讀進度條；手機版為橫向分段標籤 */
 export function SectionNav({ sections }: { sections: { id: string; label: string }[] }) {
@@ -25,19 +26,14 @@ export function SectionNav({ sections }: { sections: { id: string; label: string
   }, [sections]);
 
   useEffect(() => {
-    // 手機標籤列：令目前分段保持可見
-    document.querySelector(`.section-tabs a[href="#${current}"]`)?.scrollIntoView({ block: "nearest", inline: "center" });
+    // 手機標籤列：令目前分段保持可見。只可橫向捲動標籤列本身；
+    // 用 scrollIntoView 會連整頁一併捲動，並打斷正在進行的平滑捲動。
+    const nav = document.querySelector<HTMLElement>(".section-tabs");
+    const a = nav?.querySelector<HTMLElement>(`a[href="#${current}"]`);
+    if (nav && a && nav.clientWidth > 0) {
+      nav.scrollTo({ left: a.offsetLeft - (nav.clientWidth - a.clientWidth) / 2, behavior: "smooth" });
+    }
   }, [current]);
-
-  const go = (e: React.MouseEvent, id: string) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - 110;
-    if (window.__lenis) window.__lenis.scrollTo(top, { duration: 1.1 });
-    else window.scrollTo({ top, behavior: "smooth" });
-    history.replaceState(null, "", `#${id}`);
-  };
 
   return (
     <>
@@ -47,7 +43,7 @@ export function SectionNav({ sections }: { sections: { id: string; label: string
         <ol>
           {sections.map((s, i) => (
             <li key={s.id}>
-              <a href={`#${s.id}`} aria-current={current === s.id ? "true" : undefined} onClick={(e) => go(e, s.id)}>
+              <a href={`#${s.id}`} aria-current={current === s.id ? "true" : undefined} onClick={onAnchorClick}>
                 <span className="toc-num">{String(i + 1).padStart(2, "0")}</span>
                 {s.label}
               </a>
@@ -57,7 +53,7 @@ export function SectionNav({ sections }: { sections: { id: string; label: string
       </nav>
       <nav className="section-tabs" aria-label={t.artwork.contents}>
         {sections.map((s) => (
-          <a key={s.id} href={`#${s.id}`} aria-current={current === s.id ? "true" : undefined} onClick={(e) => go(e, s.id)}>
+          <a key={s.id} href={`#${s.id}`} aria-current={current === s.id ? "true" : undefined} onClick={onAnchorClick}>
             {s.label}
           </a>
         ))}

@@ -5,7 +5,7 @@ import { buildQuiz, rng, shuffle } from "@/lib/quiz";
 import { swapLocale, localeFromPath } from "@/i18n/config";
 import { zh } from "@/i18n/zh";
 import { en } from "@/i18n/en";
-import { imageUrl, srcSet, THUMB_WIDTHS } from "@/lib/images";
+import { imageMeta, imageUrl, srcSet, zoomUrl } from "@/lib/images";
 import { artworks } from "@/content/artworks";
 import { PERIOD_SLUGS } from "@/content/types";
 
@@ -86,14 +86,24 @@ describe("i18n", () => {
 });
 
 describe("images", () => {
-  it("only requests standard Wikimedia thumbnail widths", () => {
+  it("serves self-hosted WebP for lists and heroes", () => {
     for (const a of artworks.slice(0, 10)) {
       for (const w of [100, 400, 700, 1000, 2000]) {
-        const url = imageUrl(a.image, w);
-        const m = url.match(/\/(\d+)px-/);
-        if (m) expect(THUMB_WIDTHS).toContain(Number(m[1]) as (typeof THUMB_WIDTHS)[number]);
+        expect(imageUrl(a.image, w)).toMatch(/\/art\/[0-9a-f]{12}-\d+\.webp$/);
       }
-      expect(srcSet(a.image)).toMatch(/\d+w/);
+      expect(srcSet(a.image)).toMatch(/\.webp \d+w/);
+    }
+  });
+  it("picks the smallest local width that is large enough", () => {
+    const a = artworks.find((x) => imageMeta(x.image).width > 2000)!;
+    expect(imageUrl(a.image, 300)).toMatch(/-320\.webp$/);
+    expect(imageUrl(a.image, 500)).toMatch(/-960\.webp$/);
+    expect(imageUrl(a.image, 4000)).toMatch(/-1920\.webp$/);
+  });
+  it("uses only standard Wikimedia widths for deep zoom", () => {
+    for (const a of artworks) {
+      const m = zoomUrl(a.image).match(/\/(\d+)px-/);
+      if (m) expect(m[1]).toBe("3840");
     }
   });
 });

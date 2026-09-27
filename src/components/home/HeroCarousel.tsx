@@ -6,6 +6,7 @@ import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } fr
 import type { Bi } from "@/content/types";
 import { useDict, useLocale } from "../LocaleProvider";
 import { SplitText } from "../motion/SplitText";
+import { onAnchorClick } from "../motion/SmoothScroll";
 import { IconArrowRight, IconPause, IconPlay } from "../icons";
 
 export interface HeroSlide {
@@ -95,7 +96,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
           {t.home.subtitle}
         </motion.p>
         <motion.div className="hero-cta" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 1.1 }}>
-          <a href="#periods" className="btn btn-light">
+          <a href="#periods" className="btn btn-light" onClick={(e) => onAnchorClick(e, 0)}>
             {t.home.start}
             <IconArrowRight width={18} height={18} />
           </a>
@@ -133,7 +134,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
           </button>
         </div>
       </div>
-      <a href="#intro" className="hero-scroll" aria-label={t.common.scrollDown}>
+      <a href="#intro" className="hero-scroll" aria-label={t.common.scrollDown} onClick={(e) => onAnchorClick(e, 0)}>
         <span />
       </a>
     </section>

@@ -85,7 +85,7 @@ const artwork: Artwork = {
   hotspots: [
     { x: 0.32, y: 0.36, title: { zh: "祈禱的男子", en: "The praying man" }, body: { zh: "男子脫下帽子捧在胸前，低頭默禱。", en: "The man holds his hat to his chest and bows his head in prayer." } },
     { x: 0.6, y: 0.34, title: { zh: "祈禱的女子", en: "The praying woman" }, body: { zh: "女子雙手合十，身體前傾，神情虔誠。", en: "The woman clasps her hands and leans forward, deeply devout." } },
-    { x: 0.74, y: 0.3, title: { zh: "教堂尖塔", en: "The church spire" }, body: { zh: "遠方地平線上的教堂尖塔，鐘聲由此傳來。", en: "The church spire on the distant horizon, where the bell is ringing." } },
+    { x: 0.79, y: 0.26, title: { zh: "教堂尖塔", en: "The church spire" }, body: { zh: "遠方地平線上的教堂尖塔，鐘聲由此傳來。", en: "The church spire on the distant horizon, where the bell is ringing." } },
     { x: 0.54, y: 0.85, title: { zh: "籃子", en: "The basket" }, body: { zh: "盛着馬鈴薯的籃子，達利相信它原本是一副小棺材。", en: "A basket of potatoes, which Dalí believed was originally a small coffin." } },
     { x: 0.87, y: 0.66, title: { zh: "手推車", en: "The wheelbarrow" }, body: { zh: "裝滿麻袋的手推車，是一天勞動的成果。", en: "The wheelbarrow loaded with sacks holds the day's harvest." } },
     { x: 0.18, y: 0.8, title: { zh: "草叉", en: "The pitchfork" }, body: { zh: "插在地上的草叉，工作暫停。", en: "A pitchfork thrust into the ground: work has paused." } },

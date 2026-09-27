@@ -89,7 +89,7 @@ const artwork: Artwork = {
     { x: 0.26, y: 0.2, title: { zh: "藍色神像", en: "The blue idol" }, body: { zh: "舉起雙手的神像，代表超越人間的「彼岸」。", en: "The idol with raised arms represents “the Beyond”." } },
     { x: 0.06, y: 0.65, title: { zh: "老婦", en: "The old woman" }, body: { zh: "左方蜷縮的老婦雙手掩耳，代表死亡的迫近。", en: "The huddled old woman on the left, hands over her ears, represents approaching death." } },
     { x: 0.03, y: 0.88, title: { zh: "白鳥", en: "The white bird" }, body: { zh: "爪中抓着蜥蜴的白鳥，代表「言語的徒勞」。", en: "A white bird holding a lizard represents “the futility of words”." } },
-    { x: 0.67, y: 0.3, title: { zh: "穿紫衣的女子", en: "The women in purple" }, body: { zh: "兩名穿紫色長袍的女子邊走邊交談，神情沉思。", en: "Two women in purple robes walk and talk, deep in thought." } },
+    { x: 0.7, y: 0.25, title: { zh: "穿紫衣的女子", en: "The women in purple" }, body: { zh: "兩名穿紫色長袍的女子邊走邊交談，神情沉思。", en: "Two women in purple robes walk and talk, deep in thought." } },
   ],
   related: ["the-starry-night", "the-scream", "primavera"],
 };

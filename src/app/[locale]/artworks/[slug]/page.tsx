@@ -18,7 +18,7 @@ import {
   relatedWorks,
 } from "@/lib/data";
 import { getCatalog } from "@/lib/catalog";
-import { aspect, imageMeta, imageUrl, srcSet } from "@/lib/images";
+import { absoluteUrl, aspect, imageMeta, imageUrl, srcSet, zoomUrl } from "@/lib/images";
 import { plainText, termSlugs } from "@/lib/richText";
 import { ArtworkHero } from "@/components/art/ArtworkHero";
 import { SectionNav } from "@/components/art/SectionNav";
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return {
     title,
     description,
-    openGraph: { title, description, images: [{ url: imageUrl(a.image, 1280) }] },
-    twitter: { card: "summary_large_image", title, description, images: [imageUrl(a.image, 1280)] },
+    openGraph: { title, description, images: [{ url: absoluteUrl(imageUrl(a.image, 1920)) }] },
+    twitter: { card: "summary_large_image", title, description, images: [absoluteUrl(imageUrl(a.image, 1920))] },
   };
 }
 
@@ -118,7 +118,7 @@ export default async function ArtworkPage({ params }: Params) {
     artMedium: a.medium[locale],
     height: `${a.dimensions.h} cm`,
     width: `${a.dimensions.w} cm`,
-    image: imageUrl(a.image, 1280),
+    image: absoluteUrl(imageUrl(a.image, 1920)),
     contentLocation: museum.name[locale],
   };
 
@@ -138,10 +138,10 @@ export default async function ArtworkPage({ params }: Params) {
         minutes={readingMinutes(a, locale)}
         image={{
           src: imageUrl(a.image, 1920),
-          srcSet: srcSet(a.image, 3840),
+          srcSet: srcSet(a.image),
           lqip: meta.lqip,
           aspect: aspect(a.image),
-          zoom: imageUrl(a.image, 3840),
+          zoom: zoomUrl(a.image),
           zoomSmall: imageUrl(a.image, 1920),
         }}
         hotspots={hotspots}

@@ -22,17 +22,19 @@ interface Props {
   aspect: number;
   hotspots: ViewerHotspot[];
   initialHotspot?: number | null;
+  /** 是否一開始便顯示全部熱點（跟隨作品頁的偏好） */
+  markersOn?: boolean;
   onClose: () => void;
 }
 
 /** 全屏深度縮放檢視器（OpenSeadragon），畫上顯示可按的熱點 */
-export function DeepZoomViewer({ title, src, srcSmall, aspect, hotspots, initialHotspot, onClose }: Props) {
+export function DeepZoomViewer({ title, src, srcSmall, aspect, hotspots, initialHotspot, markersOn = true, onClose }: Props) {
   const t = useDict();
   const holder = useRef<HTMLDivElement>(null);
   const viewerRef = useRef<OpenSeadragon.Viewer | null>(null);
   const osdRef = useRef<typeof OpenSeadragon | null>(null);
   const [active, setActive] = useState<number | null>(initialHotspot ?? null);
-  const [showMarkers, setShowMarkers] = useState(true);
+  const [showMarkers, setShowMarkers] = useState(markersOn);
   const [ready, setReady] = useState(false);
   const markerEls = useRef<HTMLElement[]>([]);
 
@@ -74,6 +76,10 @@ export function DeepZoomViewer({ title, src, srcSmall, aspect, hotspots, initial
         gestureSettingsTouch: { pinchRotate: false, dblClickToZoom: true },
       });
       viewerRef.current = viewer;
+      // 高解像度圖來自 Wikimedia，被限流或失敗時改用自存的 1920px 版本
+      viewer.addHandler("open-failed", () => {
+        if (!small && !destroyed) viewer.open({ type: "image", url: srcSmall, buildPyramid: true } as unknown as OpenSeadragon.TileSourceSpecifier);
+      });
 
       viewer.addHandler("open", () => {
         setReady(true);
@@ -105,7 +111,7 @@ export function DeepZoomViewer({ title, src, srcSmall, aspect, hotspots, initial
   useEffect(() => {
     markerEls.current.forEach((el, i) => {
       el.classList.toggle("is-active", i === active);
-      el.style.visibility = showMarkers ? "visible" : "hidden";
+      el.style.visibility = showMarkers || i === active ? "visible" : "hidden";
     });
   }, [active, showMarkers, ready]);
 

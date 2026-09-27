@@ -107,7 +107,7 @@ const artwork: Artwork = {
     { x: 0.55, y: 0.42, title: { zh: "牽起的手", en: "The joined hands" }, body: { zh: "男子輕托女子的右手，另一隻手舉起，像在宣誓或祝福。", en: "The man lightly holds the woman's right hand and raises his other hand, as if taking an oath or giving a blessing." } },
     { x: 0.47, y: 0.92, title: { zh: "小狗", en: "The little dog" }, body: { zh: "一隻毛茸茸的小狗望向觀者，每一根毛髮都清晰可見。", en: "A shaggy little dog looks out at the viewer, every hair clearly visible." } },
     { x: 0.07, y: 0.92, title: { zh: "木屐", en: "The pattens" }, body: { zh: "男子的木屐隨意放在地上，女子的紅鞋則在後方。", en: "The man's wooden pattens lie casually on the floor; the woman's red shoes are further back." } },
-    { x: 0.09, y: 0.53, title: { zh: "橙", en: "Oranges" }, body: { zh: "窗台和木箱上放着昂貴的進口橙。", en: "Expensive imported oranges sit on the windowsill and chest." } },
+    { x: 0.08, y: 0.46, title: { zh: "橙", en: "Oranges" }, body: { zh: "窗台和木箱上放着昂貴的進口橙。", en: "Expensive imported oranges sit on the windowsill and chest." } },
   ],
   related: ["las-meninas", "the-ambassadors", "mona-lisa"],
 };

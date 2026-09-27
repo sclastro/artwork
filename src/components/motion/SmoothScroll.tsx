@@ -24,7 +24,8 @@ export function SmoothScroll() {
     let cancelled = false;
     import("lenis").then(({ default: L }) => {
       if (cancelled) return;
-      lenis = new L({ lerp: 0.1, wheelMultiplier: 1, autoRaf: true, anchors: { offset: -96 } });
+      // 不開 anchors：頁內錨點由各元件自行處理（見 SectionNav），否則同一次點擊會觸發兩段捲動互相打斷
+      lenis = new L({ lerp: 0.1, wheelMultiplier: 1, autoRaf: true });
       window.__lenis = lenis;
     });
     return () => {
@@ -43,6 +44,25 @@ export function SmoothScroll() {
   }, [pathname]);
 
   return null;
+}
+
+/** 平滑捲動至頁內某個 id；offset 為目標與畫面頂部的距離 */
+export function scrollToId(id: string, offset = 110) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  if (window.__lenis) window.__lenis.scrollTo(top, { duration: 1.1 });
+  else window.scrollTo({ top, behavior: "smooth" });
+}
+
+/** 頁內錨點的 onClick：以平滑捲動代替瀏覽器的即時跳轉 */
+export function onAnchorClick(e: React.MouseEvent<HTMLAnchorElement>, offset?: number) {
+  const id = e.currentTarget.hash.slice(1);
+  if (!id || !document.getElementById(id)) return;
+  e.preventDefault();
+  e.stopPropagation();
+  scrollToId(id, offset);
+  history.replaceState(null, "", `#${id}`);
 }
 
 /** 開啟全屏覆蓋層時暫停平滑捲動 */

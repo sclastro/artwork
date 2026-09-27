@@ -98,8 +98,8 @@ const artwork: Artwork = {
     { x: 0.39, y: 0.46, title: { zh: "兩隻手指", en: "The two fingers" }, body: { zh: "上帝的食指堅定地伸出，亞當的手指則微微下垂，兩者之間留下一道細小的空隙。", en: "God's forefinger extends firmly while Adam's droops slightly, leaving a tiny gap between them." } },
     { x: 0.6, y: 0.24, title: { zh: "上帝", en: "God" }, body: { zh: "白鬚飄揚的上帝向前飛馳，身穿淡紫色長袍，目光專注地望向亞當。", en: "White-bearded God surges forward in a pale violet robe, his gaze fixed on Adam." } },
     { x: 0.17, y: 0.5, title: { zh: "亞當", en: "Adam" }, body: { zh: "斜臥在山坡上的亞當體魄完美，卻仍未有生命的力量，眼神迷茫地望向造物主。", en: "Reclining on the hillside, Adam has a perfect body but not yet the strength of life; he looks towards his creator with a dreamy gaze." } },
-    { x: 0.8, y: 0.2, title: { zh: "紅色斗篷", en: "The red mantle" }, body: { zh: "包圍上帝與天使的紅色斗篷，輪廓被認為酷似人腦的剖面。", en: "The red mantle around God and the angels has an outline often compared to a cross-section of the human brain." } },
-    { x: 0.69, y: 0.21, title: { zh: "年輕女子", en: "The young woman" }, body: { zh: "被上帝左臂環抱的女子好奇地望向亞當，常被認為是夏娃。", en: "Held in God's left arm, the young woman looks curiously towards Adam; she is often identified as Eve." } },
+    { x: 0.94, y: 0.3, title: { zh: "紅色斗篷", en: "The red mantle" }, body: { zh: "包圍上帝與天使的紅色斗篷，輪廓被認為酷似人腦的剖面。", en: "The red mantle around God and the angels has an outline often compared to a cross-section of the human brain." } },
+    { x: 0.76, y: 0.22, title: { zh: "年輕女子", en: "The young woman" }, body: { zh: "被上帝左臂環抱的女子好奇地望向亞當，常被認為是夏娃。", en: "Held in God's left arm, the young woman looks curiously towards Adam; she is often identified as Eve." } },
   ],
   related: ["the-school-of-athens", "the-last-supper", "raft-of-the-medusa"],
 };
