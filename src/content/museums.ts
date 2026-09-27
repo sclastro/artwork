@@ -36,6 +36,8 @@ export const museums: Museum[] = [
   { slug: "tate-britain", name: { zh: "泰特不列顛美術館", en: "Tate Britain" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.491, lng: -0.1278, url: "https://www.tate.org.uk/visit/tate-britain" },
   { slug: "getty-center", name: { zh: "蓋蒂中心", en: "The Getty Center" }, city: { zh: "洛杉磯", en: "Los Angeles" }, country: { zh: "美國", en: "United States" }, lat: 34.078, lng: -118.4741, url: "https://www.getty.edu/" },
   { slug: "scottish-national-gallery", name: { zh: "蘇格蘭國家美術館", en: "Scottish National Gallery" }, city: { zh: "愛丁堡", en: "Edinburgh" }, country: { zh: "英國", en: "United Kingdom" }, lat: 55.9509, lng: -3.1957, url: "https://www.nationalgalleries.org/" },
+  { slug: "courtauld", name: { zh: "科陶德美術館", en: "The Courtauld Gallery" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.5111, lng: -0.1171, url: "https://courtauld.ac.uk/gallery/" },
+  { slug: "met", name: { zh: "大都會藝術博物館", en: "The Metropolitan Museum of Art" }, city: { zh: "紐約", en: "New York" }, country: { zh: "美國", en: "United States" }, lat: 40.7794, lng: -73.9632, url: "https://www.metmuseum.org/" },
 ];
 
 export const museumMap = Object.fromEntries(museums.map((m) => [m.slug, m]));

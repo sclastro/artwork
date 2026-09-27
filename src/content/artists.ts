@@ -824,8 +824,8 @@ export const artists: Artist[] = [
         en: "Toulouse-Lautrec came from an ancient aristocratic family in the south of France. As a teenager he broke both legs, which then stopped growing; as an adult he stood only about 1.5 metres tall, probably because of a hereditary condition.",
       },
       {
-        zh: "他定居巴黎蒙馬特，流連歌舞廳、酒館與妓院，以敏銳的線條描繪夜生活中的舞者、歌手與觀眾。他為紅磨坊等場所設計的石版畫海報，把海報提升為藝術。他酗酒成疾，三十六歲便去世。",
-        en: "He settled in Montmartre, frequenting cabarets, bars and brothels, and captured the dancers, singers and audiences of Paris nightlife with incisive line. His lithographic posters for the Moulin Rouge and other venues raised the poster to an art form. Alcoholism ruined his health, and he died at thirty-six.",
+        zh: "他定居巴黎蒙馬特，流連歌舞廳、酒館與妓院，以敏銳的線條描繪夜生活中的舞者、歌手與觀眾。他為紅磨坊等場所設計的[[lithography|石版畫]]海報，把海報提升為藝術。他酗酒成疾，三十六歲便去世。",
+        en: "He settled in Montmartre, frequenting cabarets, bars and brothels, and captured the dancers, singers and audiences of Paris nightlife with incisive line. His [[lithography|lithographic]] posters for the Moulin Rouge and other venues raised the poster to an art form. Alcoholism ruined his health, and he died at thirty-six.",
       },
     ],
   },
@@ -844,6 +844,60 @@ export const artists: Artist[] = [
       {
         zh: "他的畫平面、鮮明、細緻而天真，長期被學院與評論家嘲笑，卻得到畢加索等前衛藝術家的欣賞。他筆下的熱帶叢林全憑想像與巴黎植物園的觀察，他本人其實從未離開過法國。他被視為[[naive-art|素人藝術]]最重要的代表。",
         en: "His flat, vivid, meticulous and innocent paintings were long mocked by academics and critics but admired by avant-garde artists such as Picasso. His tropical jungles came from imagination and visits to the Paris botanical garden; he never actually left France. He is regarded as the foremost figure of [[naive-art]].",
+      },
+    ],
+  },
+  {
+    slug: "morisot",
+    name: { zh: "莫莉索", en: "Berthe Morisot" },
+    born: 1841,
+    died: 1895,
+    birthPlace: { zh: "法國布爾日", en: "Bourges, France" },
+    nationality: "french",
+    bio: [
+      {
+        zh: "莫莉索出身富裕的中產家庭，與姊姊艾德瑪一同學畫，曾得到風景畫家柯洛的指導。她是印象派的創始成員之一，八屆聯展中參加了七屆，只缺席女兒出生的那一年。",
+        en: "Morisot came from a prosperous bourgeois family and studied painting with her sister Edma, receiving guidance from the landscape painter Corot. A founding member of the Impressionists, she showed in seven of their eight exhibitions, missing only the year her daughter was born.",
+      },
+      {
+        zh: "她是馬奈的朋友與模特兒，後來嫁給馬奈的弟弟尤金。當時女性不能單獨出入咖啡館與公共場所，她便以家庭、花園與女性生活為題，以輕快透明的筆觸見稱。",
+        en: "She was Manet's friend and model and later married his brother Eugène. Since women could not freely frequent cafés and public places, she painted homes, gardens and women's lives, known for her light, transparent brushwork.",
+      },
+    ],
+  },
+  {
+    slug: "cassatt",
+    name: { zh: "瑪麗·卡莎特", en: "Mary Cassatt" },
+    born: 1844,
+    died: 1926,
+    birthPlace: { zh: "美國賓夕法尼亞州", en: "Pennsylvania, United States" },
+    nationality: "american",
+    bio: [
+      {
+        zh: "卡莎特生於美國富裕家庭，不顧父親反對到歐洲學畫，後定居巴黎。1877 年竇加邀請她參加印象派聯展，她是唯一正式參展的美國畫家。",
+        en: "Born into a wealthy American family, Cassatt went to Europe to study against her father's wishes and settled in Paris. In 1877 Degas invited her to exhibit with the Impressionists; she was the only American to show with them officially.",
+      },
+      {
+        zh: "她以母親與孩子的日常生活為主要題材，亦受日本浮世繪影響創作了一系列版畫。她又積極協助美國收藏家購入印象派作品，對美國博物館的印象派館藏貢獻極大。晚年因白內障幾乎失明，被迫停筆。",
+        en: "She is best known for scenes of mothers and children, and, inspired by Japanese prints, made a celebrated series of colour prints. She also helped American collectors acquire Impressionist works, shaping the great Impressionist holdings of American museums. Cataracts left her nearly blind in old age and forced her to stop painting.",
+      },
+    ],
+  },
+  {
+    slug: "daumier",
+    name: { zh: "杜米埃", en: "Honoré Daumier" },
+    born: 1808,
+    died: 1879,
+    birthPlace: { zh: "法國馬賽", en: "Marseille, France" },
+    nationality: "french",
+    bio: [
+      {
+        zh: "杜米埃是十九世紀法國最偉大的諷刺漫畫家，一生為報刊創作了四千多幅[[lithography|石版畫]]，嘲諷政客、律師與中產階級。1832 年他因把國王路易–菲臘畫成貪吃的巨人，被判入獄六個月。",
+        en: "Daumier was the greatest French caricaturist of the nineteenth century, producing more than four thousand [[lithography|lithographs]] for newspapers that mocked politicians, lawyers and the bourgeoisie. In 1832 he was jailed for six months for drawing King Louis Philippe as a gluttonous giant.",
+      },
+      {
+        zh: "他的油畫生前鮮為人知，描繪洗衣婦、乘客與街頭平民，筆觸粗獷，被視為寫實主義的先驅。晚年幾近失明、生活困苦，好友柯洛為他買下一所房子安度餘生。",
+        en: "His paintings, of washerwomen, travellers and ordinary people, were little known in his lifetime; with their rough, vigorous handling they are seen as forerunners of Realism. Nearly blind and poor in old age, he was given a house by his friend Corot.",
       },
     ],
   },
