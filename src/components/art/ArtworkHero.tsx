@@ -5,6 +5,7 @@ import { ViewTransition, useCallback, useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useDict, useLocale } from "../LocaleProvider";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
+import { HOTSPOTS_KEY, getPref, setPref } from "@/lib/prefs";
 import { DeepZoomViewer, type ViewerHotspot } from "./DeepZoomViewer";
 import { ArtImage } from "./ArtImage";
 import { IconArrowLeft, IconArrowRight, IconClock, IconClose, IconCompare, IconHeart, IconLayers, IconLink, IconZoom } from "../icons";
@@ -30,17 +31,28 @@ export function ArtworkHero(p: Props) {
   const reduce = useReducedMotion();
   const favs = useFavorites();
   const fav = favs.includes(p.slug);
-  const [markers, setMarkers] = useState(true);
+  // 熱點預設隱藏，讓觀者先直接欣賞畫作；偏好記於 localStorage，須在 useEffect 讀取以免 hydration 不一致
+  const [markers, setMarkers] = useState(false);
   const [active, setActive] = useState<number | null>(null);
   const [viewer, setViewer] = useState<{ open: boolean; at: number | null }>({ open: false, at: null });
   const [toast, setToast] = useState<string | null>(null);
   const stageRef = useRef<HTMLElement>(null);
 
-  // 內文的熱點連結：捲回大圖並開啟該熱點
+  useEffect(() => {
+    if (getPref(HOTSPOTS_KEY) === "on") setMarkers(true);
+  }, []);
+
+  const toggleMarkers = () => {
+    const next = !markers;
+    setMarkers(next);
+    setPref(HOTSPOTS_KEY, next ? "on" : "off");
+    setActive(null);
+  };
+
+  // 內文的熱點連結：捲回大圖並開啟該熱點。熱點隱藏時只亮出該一點，關閉解說後隨即消失
   useEffect(() => {
     const onHotspot = (e: Event) => {
       const i = (e as CustomEvent<number>).detail;
-      setMarkers(true);
       setActive(i);
       const top = (stageRef.current?.getBoundingClientRect().top ?? 0) + window.scrollY;
       if (window.__lenis) window.__lenis.scrollTo(top, { duration: 1.2 });
@@ -97,8 +109,9 @@ export function ArtworkHero(p: Props) {
               <button type="button" className="art-frame-btn" onClick={() => setViewer({ open: true, at: null })} aria-label={t.artwork.zoom}>
                 <ArtImage src={p.image.src} srcSet={p.image.srcSet} sizes="92vw" alt={p.title} lqip={p.image.lqip} aspect={p.image.aspect} priority />
               </button>
-              {markers &&
-                p.hotspots.map((hs, i) => (
+              <AnimatePresence>
+                {p.hotspots.map((hs, i) =>
+                  !(markers || active === i) ? null : (
                   <motion.button
                     key={i}
                     type="button"
@@ -110,11 +123,13 @@ export function ArtworkHero(p: Props) {
                     initial={{ opacity: 0, scale: 0.4 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.4 }}
-                    transition={{ delay: 0.9 + i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ delay: markers ? i * 0.06 : 0, duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
                   >
                     <span>{i + 1}</span>
                   </motion.button>
-                ))}
+                  ),
+                )}
+              </AnimatePresence>
               <AnimatePresence>
                 {h && (
                   <motion.div
@@ -177,9 +192,9 @@ export function ArtworkHero(p: Props) {
               {t.artwork.zoom}
             </button>
             {n > 0 && (
-              <button type="button" className="btn btn-ghost-light" aria-pressed={markers} onClick={() => { setMarkers((m) => !m); setActive(null); }}>
+              <button type="button" className="btn btn-ghost-light" aria-pressed={markers} onClick={toggleMarkers}>
                 <IconLayers width={18} height={18} />
-                {markers ? t.artwork.hideHotspots : t.artwork.showHotspots}
+                {markers ? t.artwork.hideGuide : t.artwork.showGuide(n)}
               </button>
             )}
             <button
@@ -203,7 +218,7 @@ export function ArtworkHero(p: Props) {
               {t.common.minutes(p.minutes)}
             </span>
           </div>
-          {n > 0 && <p className="art-hint">{t.artwork.hotspotHint}</p>}
+          {n > 0 && <p className="art-hint">{markers ? t.artwork.hotspotHint : t.artwork.hotspotHintOff}</p>}
         </motion.div>
       </div>
 
@@ -216,6 +231,7 @@ export function ArtworkHero(p: Props) {
             aspect={p.image.aspect}
             hotspots={p.hotspots}
             initialHotspot={viewer.at}
+            markersOn={markers}
             onClose={closeViewer}
           />
         )}

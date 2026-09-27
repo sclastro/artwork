@@ -74,7 +74,9 @@ npm run shot -- <url> <out.png> [w] [h] [light|dark] [fullPage] [scrollY]   # �
   並以 `NEXT_PUBLIC_BASE_PATH` 給 client。手寫的絕對路徑（例如 `router.push`、圖示）要自行加上。
 - **語言切換**（`LangToggle`）替換網址的 locale 段，保留 query 與 hash，並以 `window.__tgwKeepScroll`
   保持捲動位置。介面字串在 `src/i18n/zh.ts`、`en.ts`，型別保證兩者鍵值一致。
-- **localStorage** 鍵：`tgw:theme`、`tgw:locale`、`tgw:favorites`；讀寫一律包 try/catch。
+- **localStorage** 鍵：`tgw:theme`、`tgw:locale`、`tgw:favorites`、`tgw:hotspots`；讀寫一律包 try/catch。
+- **熱點預設隱藏**：作品頁先讓人直接欣賞畫作，按「導覽標註」才顯示全部編號（偏好記於 `tgw:hotspots`）。
+  正文或象徵卡的熱點連結只亮出該一點，關閉解說後消失，不改動偏好。曾經預設全部顯示，用戶反映編號遮住畫面。
 - `lib/catalog.ts` 產生給 client 用的輕量資料（不含長文），探索、收藏、比較、⌘K 都用它，免得把全部導賞文字送到瀏覽器。
 
 ## 動畫與互動的教訓

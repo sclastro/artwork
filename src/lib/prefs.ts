@@ -1,6 +1,8 @@
-// 偏好設定（語言、主題）的讀寫，localStorage 不可用時靜默失敗
+// 偏好設定（語言、主題、熱點）的讀寫，localStorage 不可用時靜默失敗
 export const THEME_KEY = "tgw:theme";
 export const LOCALE_KEY = "tgw:locale";
+/** 作品頁是否顯示熱點（"on"／"off"），預設隱藏 */
+export const HOTSPOTS_KEY = "tgw:hotspots";
 
 export function getPref(key: string): string | null {
   try {
