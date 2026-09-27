@@ -95,7 +95,7 @@ const artwork: Artwork = {
   ],
   hotspots: [
     { x: 0.16, y: 0.48, title: { zh: "馬拉", en: "Marat" }, body: { zh: "頭纏白巾的馬拉仰靠浴缸邊，神情平靜，猶如沉睡。", en: "His head wrapped in a white cloth, Marat leans back against the tub, peaceful as if asleep." } },
-    { x: 0.26, y: 0.56, title: { zh: "傷口", en: "The wound" }, body: { zh: "胸前一道細小的傷口，是畫中唯一明顯的暴力痕跡。", en: "A small wound in the chest is the only obvious sign of violence." } },
+    { x: 0.265, y: 0.6, title: { zh: "傷口", en: "The wound" }, body: { zh: "胸前一道細小的傷口，是畫中唯一明顯的暴力痕跡。", en: "A small wound in the chest is the only obvious sign of violence." } },
     { x: 0.76, y: 0.56, title: { zh: "科黛的信", en: "Corday's letter" }, body: { zh: "信上寫着日期與科黛的名字，以及她騙取馬拉信任的句子。", en: "The letter bears the date, Corday's name and the words she used to win Marat's trust." } },
     { x: 0.17, y: 0.97, title: { zh: "染血的刀", en: "The bloodied knife" }, body: { zh: "兇刀被丟在地上，刀刃沾着血。", en: "The murder weapon lies on the floor, its blade stained with blood." } },
     { x: 0.5, y: 0.89, title: { zh: "羽毛筆", en: "The quill" }, body: { zh: "馬拉垂下的右手仍握着羽毛筆。", en: "Marat's hanging right hand still holds his quill." } },
