@@ -32,6 +32,8 @@ export const museums: Museum[] = [
   { slug: "national-museum-norway", name: { zh: "挪威國家博物館", en: "National Museum of Norway" }, city: { zh: "奧斯陸", en: "Oslo" }, country: { zh: "挪威", en: "Norway" }, lat: 59.9115, lng: 10.7297, url: "https://www.nasjonalmuseet.no/en/" },
   { slug: "tretyakov", name: { zh: "特列季亞科夫畫廊", en: "State Tretyakov Gallery" }, city: { zh: "莫斯科", en: "Moscow" }, country: { zh: "俄羅斯", en: "Russia" }, lat: 55.7414, lng: 37.6208, url: "https://www.tretyakovgallery.ru/en/" },
   { slug: "kunsthaus-zurich", name: { zh: "蘇黎世美術館", en: "Kunsthaus Zürich" }, city: { zh: "蘇黎世", en: "Zürich" }, country: { zh: "瑞士", en: "Switzerland" }, lat: 47.3703, lng: 8.5482, url: "https://www.kunsthaus.ch/en/" },
+  { slug: "new-york-historical-society", name: { zh: "紐約歷史學會", en: "New-York Historical Society" }, city: { zh: "紐約", en: "New York" }, country: { zh: "美國", en: "United States" }, lat: 40.7794, lng: -73.974, url: "https://www.nyhistory.org/" },
+  { slug: "tate-britain", name: { zh: "泰特不列顛美術館", en: "Tate Britain" }, city: { zh: "倫敦", en: "London" }, country: { zh: "英國", en: "United Kingdom" }, lat: 51.491, lng: -0.1278, url: "https://www.tate.org.uk/visit/tate-britain" },
 ];
 
 export const museumMap = Object.fromEntries(museums.map((m) => [m.slug, m]));
